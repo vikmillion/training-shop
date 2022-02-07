@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,28 @@
   to {
     transform: rotate(360deg);
   }
+} */
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+
+#root {
+  /* display: flex; */
+  /* justify-content: center; */
+
+}
+
+.app {
+  /* width: 1280px; */
+}
+
+.post {
+  /* display: flex; */
+  /* padding: 15px;
+  border: 2px solid teal;
+  margin-top: 15px;
+  justify-content: space-between;
+  align-items: center; */
 }
