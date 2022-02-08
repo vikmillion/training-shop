@@ -48,5 +48,9 @@ flex:2;
     flex:1;
 }
 .top_bar_4 img {
+
     padding-right: 10px;
+    position: relative;
+    left: 30px;
+  
 }

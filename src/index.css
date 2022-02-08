@@ -10,23 +10,65 @@ body {
   line-height: 22px;
   font-weight: 500;
 }
+.navbar{
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+}
 
 
-.CleverShop {
+.container-1{
+  display: flex;
+  margin-left: 85px;
+margin-top: 20px;
+white-space: nowrap;
+}
+.box-1{
+flex:2;
+ justify-content:flex-start;
+}
+.box-2{
+flex:1;
 
-  left: 6.64%;
-  right: 81.64%;
-  top: 22.73%;
-  bottom: 28.79%;
+}
+.box-2 img{
+  padding-right: 50px;
+position: relative;
+left: 100px;
 
+}
+.colorblack{
+margin-left: 2%;
+  color:#121212;
+  text-decoration:none;
+ 
+}
+.CleverShop  {
+ 
+  flex: 1;
   font-family: Playfair Display SC;
   font-style: normal;
   font-weight: normal;
-  font-size: 24px;
-  line-height: 32px;
-  color: #121212;
+  font-size: 24px!important;
+  line-height: 32px !important;
+  text-decoration:none;
+  color:#121212;
+} 
+
+.linkes {
+  display: flex;
+  justify-content: space-between;
+  align-content:center;
+  margin-left : 85px;
+   margin-right : 85px;
+  margin-top: 20px;
+  color: #121212!important;
+  font-family: Spartan;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  align-items: flex-end;
+  
 }
 
-.link {
-  margin: 10px;
-}
