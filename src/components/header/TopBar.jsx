@@ -12,17 +12,17 @@ const TopBar = () => {
   return (
     <div className="top-bar">
       <div className={classes.top_bar}>
-        <div>
+        <div className={classes.top_bar_1}>
           <img src={call} alt="" /> +375 29 100 20 30
         </div>
-        <div>
+        <div className={classes.top_bar_2}>
           <img src={place} alt="" /> Belarus, Gomel, Lange 17
         </div>
-        <div>
+        <div className={classes.top_bar_3}>
           <img src={clock} alt="" /> All week 24/7
         </div>
-<div></div> <div></div>
-        <div >
+
+        <div className={classes.top_bar_4}>
           <img src={facebook} alt="" />
           <img src={twitter} alt="" />
           <img src={instargam} alt="" />
