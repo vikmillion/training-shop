@@ -5,8 +5,7 @@ import img2 from "../main-page//images/imgMain2.png";
 import img3 from "../main-page//images/imgMain3.png";
 import img4 from "../main-page//images/imgMain4.png";
 import classes from "./Main.module.css";
-import { Container } from "@mui/material/Container";
-import { Paper } from "@mui/material/Paper";
+
 // const useStyles = makeStyles((theme) =>( {
 //     mainBlanck: {
 //         positions: "relatives",
