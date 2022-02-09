@@ -1,56 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-.top_bar {
-    display: flex;
-    /* width: 1280px; */
-    align-content: center;
-    padding-left: 85px;
-    padding-right: 85px;
+.container {
+    display: grid;
+    grid-template-columns: 5fr 5fr 5fr 8fr 4fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "div1 div2 div3 div4 div5";
+    width: 1280px;
     height: 24px;
-    left: 0%;
-    right: 0%;
-    top: 0%;
-    bottom: 0%;
-    background-color: black!important;
+    background-color: #121212;
+    color: #FFFFFF;
+
+    /* align-content: center; */
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    /* justify-items: center; */
+   
+
     font-family: Spartan;
     font-style: normal;
     font-weight: 400;
     font-size: 11px;
     line-height: 12px;
-    text-align: left;
-    color: #FFFFFF;
-    margin: 0;
-    opacity: 0.8;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.top_bar_1{
-flex:2;
-  font-weight: 500;
-}
-.top_bar_1 img { 
-    padding-right: 10px;
-}
-.top_bar_2 {
-    flex:2;
-}
-.top_bar_2 img {
-    padding-right: 10px;
-}
-.top_bar_3 {
-    flex:6;
-    font-weight: 500;
-}
-.top_bar_3 img {
-    padding-right: 10px;
-}
-.top_bar_4 {
-    flex:1;
-}
-.top_bar_4 img {
 
-    padding-right: 10px;
-    position: relative;
-    left: 30px;
-  
+
+}
+
+.div1 {
+    grid-area: div1;
+}
+
+.div2 {
+    grid-area: div2;
+}
+
+.div3 {
+    grid-area: div3;
+}
+
+.div4 {
+    grid-area: div4;
+}
+
+.div5 {
+    grid-area: div5;
+
 }

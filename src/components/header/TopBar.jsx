@@ -11,18 +11,18 @@ import classes from "./TopBar.module.css";
 const TopBar = () => {
   return (
     <div className="top-bar">
-      <div className={classes.top_bar}>
-        <div className={classes.top_bar_1}>
+      <div className={classes.container}>
+        <div className={classes.div1}>
           <img src={call} alt="" /> +375 29 100 20 30
         </div>
-        <div className={classes.top_bar_2}>
+        <div className={classes.div2}>
           <img src={place} alt="" /> Belarus, Gomel, Lange 17
         </div>
-        <div className={classes.top_bar_3}>
+        <div className={classes.div3}>
           <img src={clock} alt="" /> All week 24/7
         </div>
-
-        <div className={classes.top_bar_4}>
+<div className={classes.div4}></div>
+        <div className={classes.div5}>
           <img src={facebook} alt="" />
           <img src={twitter} alt="" />
           <img src={instargam} alt="" />
@@ -34,3 +34,30 @@ const TopBar = () => {
 };
 
 export default TopBar;
+
+// const TopBar = () => {
+//   return (
+//     <div className="top-bar">
+//       <div className={classes.top_bar}>
+//         <div className={classes.top_bar_1}>
+//           <img src={call} alt="" /> +375 29 100 20 30
+//         </div>
+//         <div className={classes.top_bar_2}>
+//           <img src={place} alt="" /> Belarus, Gomel, Lange 17
+//         </div>
+//         <div className={classes.top_bar_3}>
+//           <img src={clock} alt="" /> All week 24/7
+//         </div>
+
+//         <div className={classes.top_bar_4}>
+//           <img src={facebook} alt="" />
+//           <img src={twitter} alt="" />
+//           <img src={instargam} alt="" />
+//           <img src={pinterest} alt="" />
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default TopBar;

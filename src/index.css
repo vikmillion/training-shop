@@ -2,73 +2,79 @@
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 body {
+  /* max-width: 1280px; */
   min-height: 100vh;
-  scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
+  /* scroll-behavior: smooth; */
+  /* text-rendering: optimizeSpeed; */
   font-family: Spartan, sans-serif;
   font-size: 12px;
   line-height: 22px;
   font-weight: 500;
-}
-.navbar{
-  display: flex;
-  justify-content: space-around;
-  align-items: baseline;
+
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  justify-items: center;
 }
 
 
-.container-1{
+.container-1 {
   display: flex;
   margin-left: 85px;
-margin-top: 20px;
-white-space: nowrap;
+  margin-top: 20px;
+  white-space: nowrap;
 }
-.box-1{
-flex:2;
- justify-content:flex-start;
+
+.box-1 {
+  flex: 2;
+  justify-content: flex-start;
 }
-.box-2{
-flex:1;
+
+.box-2 {
+  flex: 1;
 
 }
-.box-2 img{
+
+.box-2 img {
   padding-right: 50px;
-position: relative;
-left: 100px;
+  position: relative;
+  left: 100px;
 
 }
-.colorblack{
-margin-left: 2%;
-  color:#121212;
-  text-decoration:none;
- 
+
+.colorblack {
+  margin-left: 2%;
+  color: #121212;
+  text-decoration: none;
+
 }
-.CleverShop  {
- 
+
+.CleverShop {
+
   flex: 1;
   font-family: Playfair Display SC;
   font-style: normal;
   font-weight: normal;
-  font-size: 24px!important;
+  font-size: 24px !important;
   line-height: 32px !important;
-  text-decoration:none;
-  color:#121212;
-} 
+  text-decoration: none;
+  color: #121212;
+}
 
 .linkes {
   display: flex;
   justify-content: space-between;
-  align-content:center;
-  margin-left : 85px;
-   margin-right : 85px;
+  align-content: center;
+  margin-left: 85px;
+  margin-right: 85px;
   margin-top: 20px;
-  color: #121212!important;
+  color: #121212 !important;
   font-family: Spartan;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
   align-items: flex-end;
-  
-}
 
+}
