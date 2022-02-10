@@ -5,14 +5,17 @@
  
 }
 
- /* #root {
-
-}
-
-.app {
- 
-}
-
-.post {
+  /* #root {
 
 }  */
+
+.app {
+  overflow-x:hidden;
+   align-content: center;
+   justify-items: center;
+
+}
+
+/* .post {
+
+}   */

@@ -12,6 +12,7 @@ import Beauty from './../../pages/beauty/Beauty';
 import Accessories from './../../pages/accessories/Accessories';
 import Blog from './../../pages/blog/Blog';
 import Contact from './../../pages/contact/Contact';
+import AboutUs from "../../pages/about/AboutUs";
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index path="" element={<Main />} />
+            <Route path="AboutUs" element={<AboutUs />} />
             <Route path="Women" element={<Women />} />
             <Route path="Men" element={<Men />}></Route>
             <Route path="Beauty" element={<Beauty />}></Route>

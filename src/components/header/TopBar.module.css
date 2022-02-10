@@ -7,13 +7,13 @@
     gap: 0px 0px;
     grid-template-areas:
         "div1 div2 div3 div4 div5";
-    width: 1280px;
+    /* max-width: 1280px; */
     height: 24px;
     background-color: #121212;
     color: #FFFFFF;
 
-    /* align-content: center; */
-    justify-content: center;
+    /* align-content: center;  */
+    /* justify-content: center;  */
     justify-items: center;
     align-items: center;
     /* justify-items: center; */
@@ -24,7 +24,6 @@
     font-weight: 400;
     font-size: 11px;
     line-height: 12px;
-
 
 }
 
@@ -46,5 +45,23 @@
 
 .div5 {
     grid-area: div5;
+
+}
+.div1 img{
+
+   
+}
+
+.div2 img{
+   margin-right: 5px;
+}
+
+.div3 img{
+    margin-right: 5px;
+}
+
+
+.div5 img {
+    margin-right: 5px;
 
 }
