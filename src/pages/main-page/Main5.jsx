@@ -3,9 +3,7 @@ import classes from "./Main5.module.css";
 
 import imgMain6 from "../main-page/images/imgMain6.png";
 import imgMain7 from "../main-page/images/imgMain7.png";
-import { Button } from '@mui/material';
-import { styled } from "@mui/material/styles";
-import { black } from "@mui/material/colors";
+
 
 
 function Main5(props) {
