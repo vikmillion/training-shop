@@ -2,9 +2,9 @@ import "./App.css";
 // import "../training-shop/src/style/App.css";
 import { Routes, Route } from "react-router-dom";
 
-import Women from "../../pages/product-page/Women";
+import Women from "../../pages/product-page/Women/Women";
 import Main from "../../pages/main-page/Main";
-import Men from "../../pages/product-page/Men";
+import Men from "../../pages/product-page/Men/Men";
 // import Header from "../header/Header";
 import Error from "../../pages/Error";
 import { Layout } from "../../components/Layout";

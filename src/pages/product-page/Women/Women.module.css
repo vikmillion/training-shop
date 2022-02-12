@@ -1,0 +1,63 @@
+.container {
+    display: flex;
+    width: 1180px;
+    /* height: 955px; */
+    margin-top: 50px;
+
+}
+
+.divBlock {
+
+    display: flex;
+    flex-wrap: wrap !important;
+    align-content: space-around;
+
+
+}
+
+.block {
+    flex: auto;
+    width: 25%;
+
+
+}
+
+.divItem {
+    flex: auto;
+
+
+}
+
+.img {}
+
+.item {
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+
+
+}
+
+.blockItem {
+    width: 255px;
+    margin-bottom: 30px;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: #121212;
+}
+
+.itemRating {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.rating {
+    display: flex;
+}

@@ -1,0 +1,48 @@
+.container3{
+    margin-top: 150px;
+    display: flex;
+justify-content: space-between;
+width: 1160px;
+align-items: flex-end;
+}
+.div1{
+    flex:1;
+   display: flex;
+/* position: absolute; */
+width: 134px;
+height: 25px;
+left: 85px;
+top: 811px;
+
+font-family: Spartan;
+font-style: normal;
+font-weight: 600;
+font-size: 22px;
+line-height: 25px;
+/* identical to box height */
+
+align-items: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+
+/* dark */
+
+color: #121212;
+/* margin-right: 10%; */
+
+}
+.div2{
+   
+    display: flex;
+    font-family: Spartan;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 13px;
+    letter-spacing: 0.06em;
+    text-align: right;
+
+}
+.div2 div{
+    margin-right: 30px;
+}
