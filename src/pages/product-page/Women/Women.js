@@ -17,7 +17,7 @@ const IMAGES = [
     url: img_1,
     title: "Women's tracksuit Q109",
     price: "30.00",
-    rating: 4,
+    // rating: 4,
     ratgold: stargold,
     ratgrey: stargrey,
   },
@@ -26,7 +26,7 @@ const IMAGES = [
     url: img_2,
     title: "Women's tracksuit Q109",
     price: "30.00",
-    rating: 4,
+    // rating: 4,
     ratgold: stargold,
     ratgrey: stargrey,
   },
@@ -35,7 +35,7 @@ const IMAGES = [
     url: img_3,
     title: "Women's tracksuit Q109",
     price: "30.00",
-    rating: 4,
+    // rating: 4,
     ratgold: stargold,
     ratgrey: stargrey,
   },
@@ -44,7 +44,7 @@ const IMAGES = [
     url: img_4,
     title: "Women's tracksuit Q109",
     price: "30.00",
-    rating: 4,
+    // rating: 4,
     ratgold: stargold,
     ratgrey: stargrey,
   },
@@ -53,7 +53,7 @@ const IMAGES = [
     url: img_5,
     title: "Women's tracksuit Q109",
     price: "30.00",
-    rating: 4,
+    // rating: 4,
     ratgold: stargold,
     ratgrey: stargrey,
   },
@@ -62,7 +62,7 @@ const IMAGES = [
     url: img_6,
     title: "Women's tracksuit Q109",
     price: "30.00",
-    rating: 4,
+    // rating: 4,
     ratgold: stargold,
     ratgrey: stargrey,
   },
@@ -71,7 +71,7 @@ const IMAGES = [
     url: img_7,
     title: "Women's tracksuit Q109",
     price: "30.00",
-    rating: 4,
+    // rating: 4,
     ratgold: stargold,
     ratgrey: stargrey,
   },
@@ -80,7 +80,7 @@ const IMAGES = [
     url: img_8,
     title: "Women's tracksuit Q109",
     price: "30.00",
-    rating: 4,
+    // rating: 4,
     ratgold: stargold,
     ratgrey: stargrey,
   },
@@ -94,7 +94,7 @@ function Women() {
           {IMAGES.map((i) => (
             <>
               <div className={classes.block}>
-                <div className={classes.img}>
+                <div key={i.id} className={classes.img}>
                   <img src={i.url} alt="" />
                 </div>
                 <div className={classes.blockItem}>
@@ -125,6 +125,7 @@ function Women() {
           ))}
         </div>
       </div>
+      <div className={classes.See}>SEE ALL</div>
     </>
   );
 }

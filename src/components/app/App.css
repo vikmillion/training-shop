@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   
- 
+  
 }
 
   /* #root {
@@ -11,8 +11,8 @@
 
 .app {
   overflow-x:hidden;
-   align-content: center;
-   justify-items: center;
+   /* align-content: center; */
+   /* justify-items: center; */
 
 }
 

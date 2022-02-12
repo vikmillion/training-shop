@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 body {
-  width: 1280px;
+  /* width: 1280px; */
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
@@ -22,7 +22,8 @@ body {
 .menu {
   display: flex;
   margin-left: 85px;
-  
+  margin-right: 85px;
+  width: 1280px;
   margin-top: 20px;
   white-space: nowrap;
 }
@@ -30,17 +31,19 @@ body {
 .box-1 {
   flex: 2;
   justify-content: flex-start;
+
 }
 
 .box-2 {
   flex: 1;
+  
 
 }
 
 .box-2 img {
   padding-right: 30px;
   position: relative;
-  left: 150px;
+  left: 100px;
 
 }
 .menu-item {

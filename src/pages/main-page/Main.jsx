@@ -3,6 +3,8 @@ import React from "react";
 import Main1 from "./Main1";
 import Main2 from "./Main2";
 import Main3 from "./Main3";
+import Main4 from "./Main4";
+import Main5 from "./Main5";
 // import img1 from "../main-page//images/imgMain1.png";
 // import img2 from "../main-page//images/imgMain2.png";
 // import img3 from "../main-page//images/imgMain3.png";
@@ -24,6 +26,8 @@ function Main(params) {
       <Main1></Main1>
         <Main2></Main2>
         <Main3></Main3>
+        <Main4></Main4>
+        <Main5></Main5>
       </main>
       {/* <main>
         <div className={classes.mainBlock}>
