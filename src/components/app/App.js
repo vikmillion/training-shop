@@ -13,6 +13,9 @@ import Accessories from './../../pages/accessories/Accessories';
 import Blog from './../../pages/blog/Blog';
 import Contact from './../../pages/contact/Contact';
 import AboutUs from "../../pages/about/AboutUs";
+import Product from "../../pages/products-page/Product";
+
+
 
 
 function App() {
@@ -24,12 +27,13 @@ function App() {
           <Route path="/" element={<Layout />}>
             <Route index path="" element={<Main />} />
             <Route path="AboutUs" element={<AboutUs />} />
-            <Route path="Women" element={<Women />} />
+            <Route path="Women" element={<Women/>} />
             <Route path="Men" element={<Men />}></Route>
             <Route path="Beauty" element={<Beauty />}></Route>
             <Route path="Accessories" element={<Accessories />}></Route>
             <Route path="Blog" element={<Blog />}></Route>
             <Route path="Contact" element={<Contact />}></Route>
+            <Route path="Product" element={<Product />}></Route>
             <Route path="*" element={<Error />}></Route>
 
           </Route>

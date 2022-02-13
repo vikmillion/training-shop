@@ -1,0 +1,125 @@
+.container3 {
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    width: 1160px;
+    align-items: flex-end;
+}
+
+.div1 {
+    flex: 1;
+    display: flex;
+    /* position: absolute; */
+    width: 134px;
+    height: 25px;
+    left: 85px;
+    top: 811px;
+
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 25px;
+    /* identical to box height */
+
+    align-items: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    /* dark */
+
+    color: #121212;
+    /* margin-right: 10%; */
+
+}
+
+.div2 {
+
+    display: flex;
+    font-family: Spartan;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 13px;
+    letter-spacing: 0.06em;
+    text-align: right;
+
+}
+
+.div2 div {
+    margin-right: 30px;
+}
+.block6{
+ display: flex;   
+ margin-top: 4%;
+ justify-content: space-between;
+ width: 1180px;
+}
+.div3{
+background-image: url("./images/imgMain8.png");
+ background-repeat: no-repeat;
+width: 350px;
+height: 350px;
+
+
+}
+.div3_1,
+.div4_1,
+.div5_1 {
+    width: 302px;
+    height: 174px;
+    background-color: white;
+    margin-top: 60%;
+    margin-left: 6.5%;
+
+}
+.div4 {
+    background-image: url("./images/imgMain9.png");
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 350px;
+
+
+}
+
+
+
+.div5 {
+    background-image: url("./images/imgMain10.png");
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 350px;
+
+
+}
+
+
+h3{
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
+    /* identical to box height, or 157% */
+
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+padding-top: 5%;
+padding-left: 2%;
+}
+p{
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    /* or 157% */
+
+
+    /* dark */
+
+    color: #121212;
+
+    opacity: 0.8;
+    padding-left: 2%;
+}

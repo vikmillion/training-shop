@@ -1,8 +1,9 @@
 .container {
     display: flex;
-    width: 1180px;
+    width: 1280px;
     /* height: 955px; */
     margin-top: 50px;
+    /* margin-left: 2%; */
 
 }
 
@@ -72,4 +73,13 @@
     letter-spacing: 0.06em;
     margin-right: 15%;
 
+}
+.menu_item{
+    margin-left: 4%;
+    margin-top: 2%;
+}
+.link
+{
+    margin-left: 0.2%;
+    margin-right: 0.2%;
 }

@@ -1,8 +1,8 @@
 
 import React from "react";
-import Women from "../product-page/Women/Women";
-import Men from "../product-page/Men/Men";
 import classes from "./Main3.module.css";
+import WomenMain from './../product-page/Women/WomenMain';
+import MainMen from './../product-page/Men/MainMen';
 
 
 function Main3(props) {
@@ -22,7 +22,7 @@ function Main3(props) {
       </div>
 
       <div>
-        <Women></Women>
+        <WomenMain></WomenMain>
       </div>
       <div className={classes.container3}>
         <div className={classes.div1}>
@@ -38,7 +38,7 @@ function Main3(props) {
       </div>
 
       <div>
-        <Men></Men>
+        <MainMen></MainMen>
       </div>
     </>
   );
