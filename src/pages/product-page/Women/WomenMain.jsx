@@ -103,42 +103,46 @@ const IMAGES = [
 function WomenMain(props) {
     return (
       <>
-        <div data-test-id='menu-link-women'>
+        <div data-test-id="menu-link-women">
           <div className={classes.container}>
             <div className={classes.divBlock}>
               {IMAGES.map((i) => (
-                <><div data-test-id='clothes-card-women'>
-                  <div className={classes.block}>
-                    <div key={i.id} className={classes.img}>
-                      <Link to={i.to}>
-                        <img src={i.url} alt="" />
-                      </Link>
-                    </div>
-                    <div className={classes.blockItem}>
-                      <div className={classes.item}>{i.title}</div>
-                      <div className={classes.itemRating}>
-                        <div className={classes.price}>$ {i.price}</div>
-                        <div className={classes.rating}>
-                          <div>
-                            <img src={i.ratgold} alt="" />
-                          </div>
-                          <div>
-                            <img src={i.ratgold} alt="" />
-                          </div>
-                          <div>
-                            <img src={i.ratgold} alt="" />
-                          </div>
-                          <div>
-                            <img src={i.ratgold} alt="" />
-                          </div>
-                          <div>
-                            <img src={i.ratgrey} alt="" />
+                <>
+                 
+                    <div
+                      className={classes.block}
+                      data-test-id="clothes-card-women"
+                    >
+                      <div key={i.id} className={classes.img}>
+                        <Link to={i.to}>
+                          <img src={i.url} alt="" />
+                        </Link>
+                      </div>
+                      <div className={classes.blockItem}>
+                        <div className={classes.item}>{i.title}</div>
+                        <div className={classes.itemRating}>
+                          <div className={classes.price}>$ {i.price}</div>
+                          <div className={classes.rating}>
+                            <div>
+                              <img src={i.ratgold} alt="" />
+                            </div>
+                            <div>
+                              <img src={i.ratgold} alt="" />
+                            </div>
+                            <div>
+                              <img src={i.ratgold} alt="" />
+                            </div>
+                            <div>
+                              <img src={i.ratgold} alt="" />
+                            </div>
+                            <div>
+                              <img src={i.ratgrey} alt="" />
+                            </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  </div>
+                 
                 </>
               ))}
             </div>
