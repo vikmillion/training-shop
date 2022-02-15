@@ -21,7 +21,7 @@ import { Link } from 'react-router-dom';
 function Footer(props) {
   return (
     <>
-      <div className="footer" data-test-id='footer'>
+      <div className={classes.footer} data-test-id='footer'>
         <div className={classes.blockBlack}>
           <div className={classes.div1}>
             BE IN TOUCH WITH US:

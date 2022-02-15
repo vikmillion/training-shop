@@ -1,18 +1,22 @@
+
+
 .container3{
-    margin-top: 150px;
+    margin-top: 5%;
     display: flex;
-justify-content: space-between;
-width: 1160px;
-align-items: flex-end;
+justify-content: space-around;
+
+
+align-items: center;
+
 }
 .div1{
-    flex:1;
+    /* flex:1; */
    display: flex;
 /* position: absolute; */
 width: 134px;
 height: 25px;
-left: 85px;
-top: 811px;
+/* left: 85px;
+top: 811px; */
 
 font-family: Spartan;
 font-style: normal;
@@ -29,6 +33,7 @@ text-transform: uppercase;
 
 color: #121212;
 /* margin-right: 10%; */
+width: 20%;
 
 }
 .div2{
@@ -41,8 +46,46 @@ color: #121212;
     line-height: 13px;
     letter-spacing: 0.06em;
     text-align: right;
+width: 60%;
+justify-content: space-between;
 
 }
+.head{
+ 
+   width: 134px;
+   height: 25px;
+  
+
+   font-family: Spartan;
+   font-style: normal;
+   font-weight: 600;
+   font-size: 22px;
+   line-height: 25px;
+   /* identical to box height */
+
+   /* display: flex; */
+   align-items: center;
+   letter-spacing: 0.06em;
+   text-transform: uppercase;
+
+   /* dark */
+
+   color: #121212;
+}
 .div2 div{
-    margin-right: 30px;
+   display: flex;
+    height: 13px;
+    
+
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 13px;
+    text-align: right;
+    letter-spacing: 0.06em;
+
+    /* dark */
+
+    color: #121212;
 }

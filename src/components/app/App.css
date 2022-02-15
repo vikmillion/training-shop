@@ -1,16 +1,21 @@
+
 * {
+
   margin: 0;
   padding: 0;
-  
-  
+   
 }
 
-  /* #root {
+  #root {
+display: flex;
+justify-content: space-around;
 
-}  */
+} 
+
 
 .app {
-  overflow-x:hidden;
+ 
+  /* overflow-x:hidden; */
    /* align-content: center; */
    /* justify-items: center; */
 

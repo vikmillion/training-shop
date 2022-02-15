@@ -12,47 +12,41 @@ import classes from "./Main.module.css";
 function Main1(props) {
     return (
       <>
-        
-          <div className={classes.mainBlock}>
-            <div className={classes.container}>
-              <div className={classes.div1}>
-                <img src={img1} alt="" />
-              </div>
-              <div className={classes.div2}>
-                <img src={img2} alt="" className={classes.img1} />
-              </div>
-              <div className={classes.div3}>
-                <img src={img3} alt="" className={classes.img2} />
-              </div>
-              <div className={classes.div4}>
-                <img src={img4} alt="" />
-              </div>
-              <div className={classes.div5}>
-                <span className={classes.banner}>BANNER </span>
-                <br />
-                <span className={classes.bannerBig}> YOUR TITLE TEXT</span>
-              </div>
-              <div className={classes.div6}>
+        <div className={classes.container}>
+          <div className={classes.div1}>
+            <div className={classes.bannerDiv}>
+              <div className={classes.div1_1}>&lt;</div>
+              <div className={classes.banner}>
                 {" "}
-                <img src={left} className={classes.imgLR} alt="" />
+                <p className={classes.p1}>BANNER</p>
+                <p className={classes.p2}>YOUR TITLE TEXT</p>{" "}
               </div>
-              <div className={classes.div7}>
-                <img src={right} alt="" className={classes.imgLR} />
+              <div className={classes.div1_2}>&gt;</div>
+            </div>
+          </div>
+          <div className={classes.div2}>
+            <div className={classes.div2_1}>
+              <div className={classes.wom}>
+                <div className={classes.bannerS}>
+                  {" "}
+                  <p className={classes.p3}> WOMEN</p>
+                </div>
               </div>
-              <div className={classes.div8}>
-                <span className={classes.bannerBig2}> WOMEN</span>
-              </div>
-              <div className={classes.div9}>
-                <span className={classes.bannerBig2}>MEN</span>
-              </div>
-              <div className={classes.div10}>
-                <span className={classes.bannerBig2}> ACCESSORIES </span>
+              <div className={classes.men}>
+                <div className={classes.bannerS}>
+                  {" "}
+                  <p className={classes.p3}> MEN</p>
+                </div>
               </div>
             </div>
-
-           
+            <div className={classes.div2_2}>
+              <div className={classes.access}>
+                {" "}
+                <p className={classes.p3}>Accessories</p>{" "}
+              </div>
+            </div>
           </div>
-     
+        </div>
       </>
     );
 }

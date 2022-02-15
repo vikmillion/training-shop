@@ -1,9 +1,9 @@
 .container {
     display: flex;
-    width: 1180px;
+    /* width: 1180px; */
     /* height: 955px; */
     margin-top: 50px;
-    margin-left: 2%;
+    margin-left: 4%;
 
 }
 
@@ -71,7 +71,7 @@
     font-weight: 500;
     line-height: 15px;
     letter-spacing: 0.06em;
-    margin-right: 15%;
+   justify-content: center;
 
 }
 .menu_item {

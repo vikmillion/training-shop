@@ -7,7 +7,7 @@
     gap: 0px 0px;
     grid-template-areas:
         "div1 div2 div3 div4 div5";
-    width: 1280px;
+    max-width: 1280px;
     height: 24px;
     background-color: #121212;
     color: #FFFFFF;
@@ -64,4 +64,44 @@
 .div5 img {
     margin-right: 5px;
 
+}
+.box_1{
+    display: flex;
+    align-items: center;
+    }
+.box_2{
+    display: flex;
+   
+    
+}
+.containerLink{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 4%;
+    padding-right: 4%;
+    margin-top: 2%;
+}
+.menu_item{
+    display: flex;
+font-family: Spartan;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+color: #121212;
+ text-decoration: none;
+ margin-right: 8%;
+ white-space:  nowrap;
+
+}
+.header_logo{
+   flex: 1;
+   font-family: Playfair Display SC;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 24px !important;
+   line-height: 32px !important;
+   text-decoration: none;
+   color: #121212;
+   padding-right: 40px;
 }

@@ -9,7 +9,7 @@ const Layout = () => {
     <>
       <div className="header" data-test-id="header">
         <TopBar />
-        <Header></Header>
+        <Header></Header> 
       </div>
 
       <Outlet />
