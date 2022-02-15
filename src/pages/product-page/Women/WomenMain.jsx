@@ -107,7 +107,7 @@ function WomenMain(props) {
           <div className={classes.container}>
             <div className={classes.divBlock}>
               {IMAGES.map((i) => (
-                <>
+                <><div data-test-id='clothes-card-women'>
                   <div className={classes.block}>
                     <div key={i.id} className={classes.img}>
                       <Link to={i.to}>
@@ -137,6 +137,7 @@ function WomenMain(props) {
                         </div>
                       </div>
                     </div>
+                  </div>
                   </div>
                 </>
               ))}

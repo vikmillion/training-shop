@@ -102,7 +102,7 @@ function MainMen(props) {
           <div className={classes.container}>
             <div className={classes.divBlock}>
               {IMAGES.map((i) => (
-                <>
+                <><div data-test-id='clothes-card-men'>
                   <div className={classes.block}>
                     <div className={classes.img}>
                       <Link to={i.to}>
@@ -133,6 +133,7 @@ function MainMen(props) {
                         </div>
                       </div>
                     </div>
+                  </div>
                   </div>
                 </>
               ))}

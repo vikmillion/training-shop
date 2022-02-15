@@ -3,7 +3,7 @@ import ProductMain from "./ProductMain";
 import TopBarProduct from "./TopBarProduct";
 function ProdMen(props) {
     return (
-      <div>
+      <div data-test-id='products-page-men'>
         <TopBarProduct></TopBarProduct>
         <ProductMain></ProductMain>
       </div>
