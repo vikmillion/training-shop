@@ -16,11 +16,12 @@ import discover from "../footer/images/discover.png";
 import american from "../footer/images/american-express.png";
 
 import classes from "./Footer.module.css";
+import { Link } from 'react-router-dom';
 
 function Footer(props) {
   return (
     <>
-      <div className='footer' data-test-id='footer'>
+      <div className="footer" data-test-id="footer">
         <div className={classes.blockBlack}>
           <div className={classes.div1}>
             BE IN TOUCH WITH US:
@@ -39,7 +40,22 @@ function Footer(props) {
             <div className={classes.div3}>
               <div className={classes.upper}>CATEGORIES</div>
               <div>
-                Men <br /> Women <br /> Accessories <br /> Beauty
+                <Link
+                  to="/Men"
+                  className={classes.linkUnder}
+                  data-test-id={"menu-link-Men"}
+                >
+                  Men
+                </Link>
+                <br />
+                <Link
+                  to="/Women"
+                  className={classes.linkUnder}
+                  data-test-id={"menu-link-women"}
+                >
+                  Women
+                </Link>{" "}
+                <br /> Accessories <br /> Beauty
               </div>
             </div>
 
