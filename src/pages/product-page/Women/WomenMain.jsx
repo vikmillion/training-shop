@@ -23,7 +23,7 @@ const IMAGES = [
     rating: 4,
     ratgold: stargold,
     ratgrey: stargrey,
-    to: "/Product/women",
+    to: "/Product/women/1",
   },
   {
     id: 2,
@@ -33,7 +33,7 @@ const IMAGES = [
     rating: 4,
     ratgold: stargold,
     ratgrey: stargrey,
-    to: "/Product/women",
+    to: "/Product/women/1",
   },
   {
     id: 3,
@@ -43,7 +43,7 @@ const IMAGES = [
     rating: 4,
     ratgold: stargold,
     ratgrey: stargrey,
-    to: "/Product/women",
+    to: "/Product/women/1",
   },
   {
     id: 4,
@@ -53,7 +53,7 @@ const IMAGES = [
     rating: 4,
     ratgold: stargold,
     ratgrey: stargrey,
-    to: "/Product/women",
+    to: "/Product/women/1",
   },
   {
     id: 5,
@@ -63,7 +63,7 @@ const IMAGES = [
     rating: 4,
     ratgold: stargold,
     ratgrey: stargrey,
-    to: "/Product/women",
+    to: "/Product/women/1",
   },
   {
     id: 6,
@@ -73,7 +73,7 @@ const IMAGES = [
     rating: 4,
     ratgold: stargold,
     ratgrey: stargrey,
-    to: "/Product/women",
+    to: "/Product/women/1",
   },
   {
     id: 7,
@@ -83,7 +83,7 @@ const IMAGES = [
     rating: 4,
     ratgold: stargold,
     ratgrey: stargrey,
-    to: "/Product/women",
+    to: "/Product/women/1",
   },
   {
     id: 8,
@@ -93,7 +93,7 @@ const IMAGES = [
     rating: 4,
     ratgold: stargold,
     ratgrey: stargrey,
-    to: "/Product/women",
+    to: "/Product/women/1",
   },
 ];
 

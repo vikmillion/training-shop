@@ -21,8 +21,9 @@ function Main3(props) {
           <div>FEATURED PRODUCTS</div>
         </div>
       </div>
-
+      </div>
       <div>
+      <div data-test-id='clothes-men'>
         <WomenMain></WomenMain>
       </div>
       <div className={classes.container3}>
