@@ -8,6 +8,7 @@ import MainMen from './../product-page/Men/MainMen';
 function Main3(props) {
   return (
     <>
+      <div data-test-id='clothes-women'>
       <div className={classes.container3}>
         <div className={classes.div1}>
           <div>WOMEN'S</div>
@@ -39,7 +40,7 @@ function Main3(props) {
 
       <div>
         <MainMen></MainMen>
-      </div>
+      </div></div>
     </>
   );
 }

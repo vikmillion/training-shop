@@ -103,6 +103,7 @@ const IMAGES = [
 function WomenMain(props) {
     return (
       <>
+        
         <div data-test-id="menu-link-women">
           <div className={classes.container}>
             <div className={classes.divBlock}>
