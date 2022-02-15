@@ -14,7 +14,7 @@ function Header() {
             <Link
               to="/"
               className="header-nav-logo"
-              data-test-id="header-nav-logo"
+              data-test-id="header-logo-link"
             >
               CleverShop
             </Link>

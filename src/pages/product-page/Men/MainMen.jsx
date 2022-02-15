@@ -98,12 +98,15 @@ const IMAGES = [
 function MainMen(props) {
     return (
       <>
-        <div data-test-id='menu-link-men'>
+        <div data-test-id="menu-link-men">
           <div className={classes.container}>
             <div className={classes.divBlock}>
               {IMAGES.map((i) => (
                 <>
-                  <div className={classes.block}data-test-id='clothes-card-men'>
+                  <div
+                    className={classes.block}
+                    data-test-id="clothes-card-men"
+                  >
                     <div className={classes.img}>
                       <Link to={i.to}>
                         {" "}
@@ -134,12 +137,21 @@ function MainMen(props) {
                       </div>
                     </div>
                   </div>
-              
                 </>
               ))}
             </div>
           </div>
-          <div className={classes.See}>SEE ALL</div>
+          <div className={classes.See}>
+           
+            <Link
+              to="/Men"
+             
+              data-test-id={"menu-link-men"}
+            >
+             SEE ALL
+            </Link>
+          
+          </div>
         </div>
       </>
     );

@@ -43,7 +43,7 @@ function Footer(props) {
                 <Link
                   to="/Men"
                   className={classes.linkUnder}
-                  data-test-id={"menu-link-Men"}
+                  data-test-id={"menu-link-men"}
                 >
                   Men
                 </Link>

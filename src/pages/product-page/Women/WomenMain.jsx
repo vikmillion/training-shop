@@ -148,7 +148,11 @@ function WomenMain(props) {
               ))}
             </div>
           </div>
-          <div className={classes.See}>SEE ALL</div>
+          <div className={classes.See}> <Link
+              to="/Women"
+            
+              data-test-id={"menu-link-women"}
+            > SEE ALL</Link> </div>
         </div>
       </>
     );

@@ -173,84 +173,86 @@ function ProductMain(props) {
             <div className={classes.hr}></div>
           </div>
         </div>
-        <div className={classes.lastBlock}>
-          <div className={classes.related}>RELATED PRODUCTS</div>
-          <div className={classes.last}>
-            <div className={classes.last1}> &lt; </div>
-            <div className={classes.last1}> &gt; </div>
-          </div>
-        </div>{" "}
-        <div className={classes.imgTextBlock}>
-          <div className={classes.imgText}>
-            <div className={classes.imgText1}>
-              <img src={imgM1} alt="" />
+        <div data-test-id="product-page-woman">
+          <div className={classes.lastBlock}>
+            <div className={classes.related}>RELATED PRODUCTS</div>
+            <div className={classes.last}>
+              <div className={classes.last1}> &lt; </div>
+              <div className={classes.last1}> &gt; </div>
             </div>
-            <div className={classes.descrip2}>
-              <div className={classes.title}>Women's tracksuit Q109</div>
-              <div className={classes.priceStar}>
-                <div>$ 30.00</div>
-                <div>
-                  <img src={star} alt="" />
-                  <img src={star} alt="" />
-                  <img src={star} alt="" />
-                  <img src={star} alt="" />
-                  <img src={starGrey} alt="" />
+          </div>{" "}
+          <div className={classes.imgTextBlock}>
+            <div className={classes.imgText}>
+              <div className={classes.imgText1}>
+                <img src={imgM1} alt="" />
+              </div>
+              <div className={classes.descrip2}>
+                <div className={classes.title}>Women's tracksuit Q109</div>
+                <div className={classes.priceStar}>
+                  <div>$ 30.00</div>
+                  <div>
+                    <img src={star} alt="" />
+                    <img src={star} alt="" />
+                    <img src={star} alt="" />
+                    <img src={star} alt="" />
+                    <img src={starGrey} alt="" />
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className={classes.imgText}>
-            <div className={classes.imgText1}>
-              <img src={imgM2} alt="" />
-            </div>
-            <div className={classes.descrip2}>
-              <div className={classes.title}>Women's tracksuit Q109</div>
-              <div className={classes.priceStar}>
-                <div>
-                  $ 30.00 <span className={classes.crossed}> $ 60.00</span>
-                </div>
-                <div>
-                  <img src={star} alt="" />
-                  <img src={star} alt="" />
-                  <img src={star} alt="" />
-                  <img src={star} alt="" />
-                  <img src={starGrey} alt="" />
+            <div className={classes.imgText}>
+              <div className={classes.imgText1}>
+                <img src={imgM2} alt="" />
+              </div>
+              <div className={classes.descrip2}>
+                <div className={classes.title}>Women's tracksuit Q109</div>
+                <div className={classes.priceStar}>
+                  <div>
+                    $ 30.00 <span className={classes.crossed}> $ 60.00</span>
+                  </div>
+                  <div>
+                    <img src={star} alt="" />
+                    <img src={star} alt="" />
+                    <img src={star} alt="" />
+                    <img src={star} alt="" />
+                    <img src={starGrey} alt="" />
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className={classes.imgText}>
-            <div className={classes.imgText1}>
-              <img src={imgM3} alt="" />
-            </div>
-            <div className={classes.descrip2}>
-              <div className={classes.title}>Women's tracksuit Q109</div>
-              <div className={classes.priceStar}>
-                <div>$ 30.00</div>
-                <div>
-                  <img src={star} alt="" />
-                  <img src={star} alt="" />
-                  <img src={star} alt="" />
-                  <img src={star} alt="" />
-                  <img src={starGrey} alt="" />
+            <div className={classes.imgText}>
+              <div className={classes.imgText1}>
+                <img src={imgM3} alt="" />
+              </div>
+              <div className={classes.descrip2}>
+                <div className={classes.title}>Women's tracksuit Q109</div>
+                <div className={classes.priceStar}>
+                  <div>$ 30.00</div>
+                  <div>
+                    <img src={star} alt="" />
+                    <img src={star} alt="" />
+                    <img src={star} alt="" />
+                    <img src={star} alt="" />
+                    <img src={starGrey} alt="" />
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className={classes.imgText}>
-            <div className={classes.imgText1}>
-              <img src={imgM4} alt="" />
-            </div>
-            <div className={classes.descrip2}>
-              <div className={classes.title}>Women's tracksuit Q109</div>
-              <div className={classes.priceStar}>
-                <div>$ 30.00</div>
-                <div>
-                  <img src={star} alt="" />
-                  <img src={star} alt="" />
-                  <img src={star} alt="" />
-                  <img src={star} alt="" />
-                  <img src={starGrey} alt="" />
+            <div className={classes.imgText}>
+              <div className={classes.imgText1}>
+                <img src={imgM4} alt="" />
+              </div>
+              <div className={classes.descrip2}>
+                <div className={classes.title}>Women's tracksuit Q109</div>
+                <div className={classes.priceStar}>
+                  <div>$ 30.00</div>
+                  <div>
+                    <img src={star} alt="" />
+                    <img src={star} alt="" />
+                    <img src={star} alt="" />
+                    <img src={star} alt="" />
+                    <img src={starGrey} alt="" />
+                  </div>
                 </div>
               </div>
             </div>
