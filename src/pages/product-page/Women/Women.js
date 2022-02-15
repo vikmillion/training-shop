@@ -5,10 +5,10 @@ import WomenMain from "./WomenMain";
 
 function Women() {
   return (
-    <>
+    <> <div className="clothes-women" data-test-id="clothes-women">
       <TopBarWoman></TopBarWoman>
-      <div className="clothes-women" data-test-id="clothes-card-women">
-        <WomenMain></WomenMain>
+     <div data-test-id='clothes-card-women'>
+        <WomenMain></WomenMain></div>
       </div>
     </>
   );

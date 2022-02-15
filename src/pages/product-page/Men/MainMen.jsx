@@ -22,7 +22,7 @@ const IMAGES = [
     rating: 4,
     ratgold: stargold,
     ratgrey: stargrey,
-    to: "/Product",
+    to: "/Product/men",
   },
   {
     id: 2,
@@ -32,7 +32,7 @@ const IMAGES = [
     rating: 4,
     ratgold: stargold,
     ratgrey: stargrey,
-    to: "/Product",
+    to: "/Product/men",
   },
   {
     id: 3,
@@ -42,7 +42,7 @@ const IMAGES = [
     rating: 4,
     ratgold: stargold,
     ratgrey: stargrey,
-    to: "/Product",
+    to: "/Product/men",
   },
   {
     id: 4,
@@ -52,7 +52,7 @@ const IMAGES = [
     rating: 4,
     ratgold: stargold,
     ratgrey: stargrey,
-    to: "/Product",
+    to: "/Product/men",
   },
   {
     id: 5,
@@ -62,7 +62,7 @@ const IMAGES = [
     rating: 4,
     ratgold: stargold,
     ratgrey: stargrey,
-    to: "/Product",
+    to: "/Product/men",
   },
   {
     id: 6,
@@ -72,7 +72,7 @@ const IMAGES = [
     rating: 4,
     ratgold: stargold,
     ratgrey: stargrey,
-    to: "/Product",
+    to: "/Product/men",
   },
   {
     id: 7,
@@ -82,7 +82,7 @@ const IMAGES = [
     rating: 4,
     ratgold: stargold,
     ratgrey: stargrey,
-    to: "/Product",
+    to: "/Product/men",
   },
   {
     id: 8,
@@ -92,7 +92,7 @@ const IMAGES = [
     rating: 4,
     ratgold: stargold,
     ratgrey: stargrey,
-    to: "/Product",
+    to: "/Product/men",
   },
 ];
 function MainMen(props) {

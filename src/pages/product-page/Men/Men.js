@@ -6,9 +6,10 @@ import TopBarMen from "./TopBarMen";
 function Men() {
   return (
     <>
-      <div className="clothes-men" data-test-id="clothes-card-men">
+      <div className="clothes-men" data-test-id="clothes-men">
         <TopBarMen></TopBarMen>
-        <MainMen></MainMen>
+<div data-test-id='clothes-card-men'>
+        <MainMen></MainMen></div>
       </div>
     </>
   );

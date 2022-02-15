@@ -8,34 +8,37 @@ import Men from "../../pages/product-page/Men/Men";
 // import Header from "../header/Header";
 import Error from "../../pages/Error";
 import { Layout } from "../../components/Layout";
-import Beauty from './../../pages/beauty/Beauty';
-import Accessories from './../../pages/accessories/Accessories';
-import Blog from './../../pages/blog/Blog';
-import Contact from './../../pages/contact/Contact';
+import Beauty from "./../../pages/beauty/Beauty";
+import Accessories from "./../../pages/accessories/Accessories";
+import Blog from "./../../pages/blog/Blog";
+import Contact from "./../../pages/contact/Contact";
 import AboutUs from "../../pages/about/AboutUs";
 import Product from "../../pages/products-page/Product";
-
-
-
+import ProdWomen from "./../../pages/products-page/ProdWomen";
+import ProdMen from "./../../pages/products-page/ProdMen";
 
 function App() {
   return (
     <>
       <div className="app" data-test-id="app">
-      
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index path="" element={<Main />} />
             <Route path="AboutUs" element={<AboutUs />} />
-            <Route path="Women" element={<Women/>} />
-            <Route path="Men" element={<Men />}></Route>
+            <Route path="Women/*" element={<Women />}></Route>
+            <Route path="Men/*" element={<Men />}></Route>
+
             <Route path="Beauty" element={<Beauty />}></Route>
             <Route path="Accessories" element={<Accessories />}></Route>
             <Route path="Blog" element={<Blog />}></Route>
             <Route path="Contact" element={<Contact />}></Route>
-            <Route path="Product" element={<Product />}></Route>
-            <Route path="*" element={<Error />}></Route>
+            <Route path="Product/" element={<Product />}>
+             
+              <Route path="women" element={<ProdWomen />}></Route>{" "}
+              <Route path="men" element={<ProdMen />}></Route>
+            </Route>
 
+            <Route path="*" element={<Error />}></Route>
           </Route>
         </Routes>
       </div>
