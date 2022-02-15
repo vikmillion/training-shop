@@ -1,10 +1,5 @@
 import React from 'react';
-import img1 from "../main-page//images/imgMain1.png";
-import img2 from "../main-page//images/imgMain2.png";
-import img3 from "../main-page//images/imgMain3.png";
-import img4 from "../main-page//images/imgMain4.png";
-import left from "../main-page/images/left.svg";
-import right from "../main-page/images/right.svg";
+
 
 
 import classes from "./Main.module.css";
