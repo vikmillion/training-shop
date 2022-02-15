@@ -8,15 +8,14 @@ const Layout = () => {
   return (
     <>
       <div className="header" data-test-id="header">
-      
-          <TopBar />
-          <Header></Header>
-       
+        <TopBar />
+        <Header></Header>
       </div>
-  
+
       <Outlet />
-<footer>
-      <Footer></Footer></footer>
+      <footer data-test-id="footer">
+        <Footer></Footer>
+      </footer>
     </>
   );
 };
