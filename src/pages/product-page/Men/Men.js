@@ -6,8 +6,9 @@ import TopBarMen from "./TopBarMen";
 function Men() {
   return (
     <>
+      <div className='page-product' data-test-id='rpoduct-page'>
       <TopBarMen></TopBarMen>
-      <MainMen></MainMen>
+      <MainMen></MainMen></div>
     </>
   );
 }

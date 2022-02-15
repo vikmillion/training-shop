@@ -9,6 +9,7 @@
     background: #121212;
     justify-items: center;
     align-items: center;
+    padding-top: 1%;
 
 }
 
@@ -44,6 +45,7 @@ input {
     width: 120px;
     color: #FFFFFF;
     border: 1px solid white;
+    background-color: #121212;
     
 }
 .blockImg{
