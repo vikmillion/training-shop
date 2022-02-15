@@ -6,9 +6,10 @@ import TopBarMen from "./TopBarMen";
 function Men() {
   return (
     <>
-      <div className='page-product' data-test-id='rpoduct-page'>
-      <TopBarMen></TopBarMen>
-      <MainMen></MainMen></div>
+      <div className="clothes-men" data-test-id="clothes-card-men">
+        <TopBarMen></TopBarMen>
+        <MainMen></MainMen>
+      </div>
     </>
   );
 }
