@@ -1,71 +1,69 @@
 .container {
-    display: grid;
-    grid-template-columns:repeat(50 1fr);
-    grid-template-rows:repeat(25 1fr);
-    gap: 0px 0px;
-    /* justify-content: space-evenly; */
-    align-content: center;
+    display: flex;
+    justify-content: space-around;
   
-    align-items: center;
-    justify-items: start
 }
 .div1 {
-    grid-area: 1 / 1 / 25 / 25;
+ display: flex;
+ background-image: url("./images/img_1.jpg");
+ width: 540px;height: 260px;
+ justify-content: center;
+ align-items: center;
+ 
 }
 
 .div2 {
-    grid-area: 1 / 25 / 50 / 50;
+ display: flex;
+  background-image: url("./images/img_2.jpg");
+  width: 540px;
+  height: 260px;
+justify-content: center;
+align-items: center;
 }
 
 .div3 {
-    grid-area:11 / 5 /13/18;
-       justify-content: space-evenly;
-   background-color: white;
-   padding-top: 10px;
-
-}
-
-.div4 {
-    grid-area: 11 / 30 /13/40;
-       justify-content: space-evenly;
-       background-color: white;
-       padding-top: 10px;
-
-}
-.small{
-/* position: absolute; */
+  display: flex;
+  align-items: center;
 width: 293px;
 height: 71px;
-/* left: 305px;
-top: 3024px; */
-/* padding-bottom: 10px; */
-margin-top: 10px;
+background: #FFFFFF;
+border-radius: 4px;
+flex-direction: column;
+justify-content: space-evenly;
+}
+
+
+.small{
+    display: flex;
+/* width: 293px;
+height: 71px; */
+/* margin-top: 10px; */
 font-family: Spartan;
 font-style: normal;
 font-weight: 600;
 font-size: 12px;
 line-height: 13px;
-align-items: center;
-text-align: center;
-/* letter-spacing: 0.06em; */
+/* align-items: center;
+text-align: center; */
+letter-spacing: 0.06em;
 text-transform: uppercase;
 font-family: Spartan;
 color: #121212;
-/* opacity: 0.6; */
+opacity: 0.6;
 }
 
 .big
 {
-width: 293px;
-height: 71px;
+/* width: 293px;
+height: 71px; */
 background-color: white;
 font-family: Spartan;
 font-style: normal;
 font-weight: 600;
 font-size: 16px;
 line-height: 18px;
-align-items: center;
-/* letter-spacing: 0.06em; */
+/* align-items: center; */
+letter-spacing: 0.06em;
 text-transform: uppercase;
 color: #121212;
 

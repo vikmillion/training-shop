@@ -1,36 +1,36 @@
 .container3 {
-    margin-top: 150px;
+    margin-top: 5%;
     display: flex;
-    justify-content: space-between;
-    width: 1160px;
-    align-items: flex-end;
+    /* justify-content: space-between; */
+    /* width: 1160px; */
+    align-items: center;
+    flex-direction: column;
+}
+
+.box1 {
+    display: flex;
+width: 90%;
+}
+
+.box2 {
+    display: flex;
+   width: 90%;
+   justify-content: space-around;
+   
 }
 
 .div1 {
     flex: 1;
     display: flex;
-    /* position: absolute; */
-    width: 134px;
-    height: 25px;
-    left: 85px;
-    top: 811px;
-
     font-family: Spartan;
     font-style: normal;
     font-weight: 600;
     font-size: 22px;
     line-height: 25px;
-    /* identical to box height */
-
-    align-items: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-
-    /* dark */
-
     color: #121212;
-    /* margin-right: 10%; */
-
+    width: 90%;
 }
 
 .div2 {
@@ -43,42 +43,48 @@
     line-height: 13px;
     letter-spacing: 0.06em;
     text-align: right;
-
+width: 10%;
 }
 
 .div2 div {
-    margin-right: 30px;
-}
-.block6{
- display: flex;   
- margin-top: 4%;
- justify-content: space-between;
- width: 1180px;
-}
-.div3{
-background-image: url("./images/imgMain8.png");
- background-repeat: no-repeat;
-width: 350px;
-height: 350px;
-
 
 }
+
+.block6 {
+    display: flex;
+    margin-top: 4%;
+    /* justify-content: space-between; */
+    /* width: 1180px; */
+}
+
+.div3 {
+    background-image: url("./images/imgMain8.png");
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 350px;
+display: flex;
+padding-left: 10%;
+
+}
+
 .div3_1,
 .div4_1,
 .div5_1 {
     width: 302px;
-    height: 174px;
+    height: 194px;
     background-color: white;
     margin-top: 60%;
-    margin-left: 6.5%;
+    margin-right: 30%;
 
 }
+
 .div4 {
     background-image: url("./images/imgMain9.png");
     background-repeat: no-repeat;
     width: 350px;
     height: 350px;
-
+display: flex;
+padding-left: 10%;
 
 }
 
@@ -90,11 +96,12 @@ height: 350px;
     width: 350px;
     height: 350px;
 
-
+display: flex;
+padding-left: 10%;
 }
 
 
-h3{
+h3 {
     font-family: Spartan;
     font-style: normal;
     font-weight: 600;
@@ -104,10 +111,11 @@ h3{
 
     letter-spacing: 0.06em;
     text-transform: uppercase;
-padding-top: 5%;
-padding-left: 2%;
+    padding-top: 5%;
+    padding-left: 2%;
 }
-p{
+
+p {
     font-family: Spartan;
     font-style: normal;
     font-weight: normal;

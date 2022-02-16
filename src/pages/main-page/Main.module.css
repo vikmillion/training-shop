@@ -1,3 +1,5 @@
+
+
 .container {
     display: flex;
     height: 490px;
@@ -179,5 +181,9 @@ display: flex;
 .imgBefore img{
     /* margin-right: 10px; */
 
+}
+.divWidth{
+   width: 302px; 
+   white-space: nowrap;
 }
 

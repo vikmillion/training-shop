@@ -1,24 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 .container {
-    display: grid;
-    grid-template-columns: 5fr 5fr 5fr 8fr 4fr;
-    grid-template-rows: 1fr;
-    gap: 0px 0px;
-    grid-template-areas:
-        "div1 div2 div3 div4 div5";
-    max-width: 1280px;
+    display: flex;
     height: 24px;
     background-color: #121212;
     color: #FFFFFF;
-
-    /* align-content: center;  */
-    /* justify-content: center;  */
-    justify-items: center;
+    justify-content: space-around;
     align-items: center;
-    /* justify-items: center; */
-   
-
     font-family: Spartan;
     font-style: normal;
     font-weight: 400;
@@ -28,25 +16,26 @@
 }
 
 .div1 {
-    grid-area: div1;
+   display: flex;
 }
 
 .div2 {
-    grid-area: div2;
+   display: flex;
 }
 
 .div3 {
-    grid-area: div3;
+   display: flex;
 }
 
-.div4 {
-    grid-area: div4;
+.div4 
+{display: flex;
 }
 
 .div5 {
-    grid-area: div5;
-
+display: flex;
+/* flex-basis: 20%; */
 }
+
 .div1 img{
 
    
@@ -95,7 +84,8 @@ color: #121212;
 
 }
 .header_logo{
-   flex: 1;
+    display: flex;
+   /* flex: 1; */
    font-family: Playfair Display SC;
    font-style: normal;
    font-weight: normal;

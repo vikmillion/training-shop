@@ -47,16 +47,19 @@
 }
 
 .price {
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 16px;
-    color: #121212;
+ font-family: Spartan;
+ font-style: normal;
+ font-weight: bold;
+ font-size: 14px;
+ line-height: 16px;
+ color: #121212;
 }
 
 .itemRating {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+      margin-top: 2%;
 }
 
 .rating {
@@ -82,4 +85,13 @@
 .link {
     margin-left: 0.2%;
     margin-right: 0.2%;
+}
+.title {
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #121212;
+    opacity: 0.6;
 }

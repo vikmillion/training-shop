@@ -1,4 +1,5 @@
 
+
 .blockBlack {
     /* display: flex; */
     /* position: absolute; */
@@ -20,7 +21,7 @@
 
     color: #FFFFFF;
     align-items: baseline;
-
+ white-space: nowrap;
 }
 
 input {
@@ -50,7 +51,7 @@ input {
     
 }
 .blockImg{
-    margin-left: 20%;
+    margin-left: 25%;
     color:#FFFFFF;
     width: 100px;
 }
@@ -87,7 +88,7 @@ margin-top: 2%;
 }
 .linkGroup{
     display: flex;
-    width: 1280px;
+    /* width: 1280px; */
 
 }
 .underline{
@@ -96,7 +97,7 @@ margin-top: 2%;
 .blockBottom
 {
     display: flex;
-    width: 1280px;
+    /* width: 1280px; */
     justify-content: space-around;
     margin-top: 2%;
 }
