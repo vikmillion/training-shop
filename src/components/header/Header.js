@@ -49,10 +49,11 @@ const linkes = [
 function Header() {
   return (
     <>
-      <nav data-test-id={"menu-link"}>
-        <div className={classes.menu} data-test-id="menu">
-          <div className={classes.containerLink}>
-            <div className={classes.box_1}>
+      <div data-test-id={"menu-link"}>
+        
+          <div className={classes.containerLink}data-test-id="menu">
+          <div className={classes.box_1}>
+            <div>
               <Link
                 to="/"
                 className={classes.header_logo}
@@ -60,80 +61,34 @@ function Header() {
               >
                 CleverShop
               </Link>
-            
-                {/* <Link
-                  to="/AboutUs"
-                  className={classes.menu_item}
-                  data-test-id={"menu-link"}
-                >
-                  About Us
-                </Link> */}
+            </div>
+            <div>
               {linkes.map((i) => <>
                 
                 <Link key={i.id} to={`/${i.path}`} className={classes.menu_item} data-test-id={`menu-link-${i.path}`}> {i.title} </Link>
               </>)}
-                {/* <Link
-                  to="/Women"
-                  className={classes.menu_item}
-                  data-test-id={"menu-link"}
-                >
-                  Women
-                </Link>
-                <Link
-                  to="/Men"
-                  className={classes.menu_item}
-                  data-test-id={"menu-link"}
-                >
-                  Men
-                </Link>
-                <Link
-                  to="/Beauty"
-                  className={classes.menu_item}
-                  data-test-id={"menu-link"}
-                >
-                  Beauty
-                </Link>
-                <Link
-                  to="/Accessories"
-                  className={classes.menu_item}
-                  data-test-id={"menu-link"}
-                >
-                  Accessories
-                </Link>
-                <Link
-                  to="/Blog"
-                  className={classes.menu_item}
-                  data-test-id={"menu-link"}
-                >
-                  Blog
-                </Link>
-                <Link
-                  to="/Contact"
-                  className={classes.menu_item}
-                  data-test-id={"menu-link"}
-                >
-                  Contact
-                </Link> */}
+       </div>
             </div>
 
             <div className={classes.box_2}>
-              <button>
-                <img src={search} alt="" />
-              </button>
-              <button>
+              <div>
+              {/* <button> */}
+                <img src={search} alt="" /></div>
+              {/* </button> */}
+              {/* <button> */}
                 {" "}
-                <img src={planet} alt="" />
-              </button>
-              <button>
-                <img src={user} alt="" />
-              </button>
-              <button>
-                <img src={shopcart} alt="" />
-              </button>
+              <div> <img src={planet} alt="" /></div>
+              {/* </button> */}
+              {/* <button> */}
+               <div> <img src={user} alt="" /></div>
+              {/* </button> */}
+              {/* <button> */}
+               <div> <img src={shopcart} alt="" /></div>
+              {/* </button> */}
             </div>
-          </div>
+          
         </div>
-      </nav>
+      </div>
     </>
   );
 }

@@ -13,19 +13,25 @@ const TopBar = () => {
     <div className="top-bar">
       <div className={classes.container}>
         <div className={classes.div1}>
-          <img src={call} alt="" /> +375 29 100 20 30
+          <img src={call} alt="" />
+          &nbsp; +375 29 100 20 30
         </div>
         <div className={classes.div2}>
-          <img src={place} alt="" /> Belarus, Gomel, Lange 17
+          <img src={place} alt="" />
+          &nbsp; Belarus, Gomel, Lange 17
         </div>
         <div className={classes.div3}>
-          <img src={clock} alt="" /> All week 24/7
+          <img src={clock} alt="" />
+          &nbsp; All week 24/7
         </div>
-<div className={classes.div4}></div>
+        <div className={classes.div4}></div>
         <div className={classes.div5}>
           <img src={facebook} alt="" />
+          &nbsp;
           <img src={twitter} alt="" />
+          &nbsp;
           <img src={instargam} alt="" />
+          &nbsp;
           <img src={pinterest} alt="" />
         </div>
       </div>

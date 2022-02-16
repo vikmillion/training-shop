@@ -1,6 +1,25 @@
+@media (min-width: 768px) and (max-width: 979px) {
+  .container {
+    max-width: 870px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .container {
+    max-width: 620px;
+  }
+}
+
+@media (max-width:480px) {
+  .container {
+    max-width: 360px;
+  }
+}
 .container {
     display: flex;
     justify-content: space-around;
+       margin: 3% 0 0 3%;
+       padding: 0% 0.1%;
   
 }
 .div1 {
