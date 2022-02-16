@@ -143,11 +143,19 @@ function Footer(props) {
             </div>
             <div className={classes.div3}>
               <div className={classes.upper}>USEFUL LINK </div>
-              <div className={classes.linkUnder}>
-                Terms & Conditions <br /> Returns & Exchanges <br /> Shipping &
-                Delivery <br />
-                Privacy Policy
-              </div>
+              {linkes3.map((i) => (
+                <>
+                  <Link
+                    to={i.path}
+                    data-test-id={`footer-nav-link-${i.path}`}
+                    className={classes.linkUnder}
+                  >
+                    {i.title}
+                  </Link>{" "}
+                  <br></br>
+                </>
+              ))}
+              
             </div>
             <div className={classes.div3}>
               <div className={classes.upper}>CONTACT US</div>
