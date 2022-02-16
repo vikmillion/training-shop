@@ -22,13 +22,13 @@ const linkes1 = [
  
   {
     id: 1,
-    path: "Women",
-    title: "Women",
+    path: "men",
+    title: "Men",
   },
   {
     id: 2,
-    path: "Men",
-    title: "Men",
+    path: "women",
+    title: "Women",
   },
   {
     id: 3,
