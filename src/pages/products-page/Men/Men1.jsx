@@ -4,10 +4,10 @@ import TopBarProduct from "../TopBarProduct";
 
 function Men1(props) {
   return (
-    <div data-test-id="products-page-men">
-      <TopBarProduct></TopBarProduct>
+    <>
+      <TopBarProduct></TopBarProduct><div data-test-id="product-page-men">
       <ProductMain></ProductMain>
-    </div>
+    </div></>
   );
 }
 

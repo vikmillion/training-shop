@@ -98,7 +98,7 @@ const IMAGES = [
 function MainMen(props) {
     return (
       <>
-        <div data-test-id="">
+        <div data-test-id="products-page-men">
           <div className={classes.container}>
             <div className={classes.divBlock}>
               {IMAGES.map((i) => (
