@@ -1,3 +1,5 @@
+@media screen {
+    
 
 
 .container {
@@ -187,3 +189,4 @@ display: flex;
    white-space: nowrap;
 }
 
+}

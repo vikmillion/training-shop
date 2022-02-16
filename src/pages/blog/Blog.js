@@ -1,10 +1,13 @@
 import React from 'react';
+import Main4 from '../main-page/Main4';
 
 function Blog(props) {
     return (
+        <>
         <div>
             Blog
-        </div>
+           
+        </div> <Main4></Main4></>
     );
 }
 

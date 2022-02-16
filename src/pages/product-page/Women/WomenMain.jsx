@@ -16,84 +16,84 @@ import { Link } from 'react-router-dom';
 
 const IMAGES = [
   {
-    id: 1,
+    id: "1",
     url: img_1,
     title: "Women's tracksuit Q109",
     price: "30.00",
     rating: 4,
     ratgold: stargold,
     ratgrey: stargrey,
-    to: "/Product/women/1",
+    to: "Product/women",
   },
   {
-    id: 2,
+    id: "2",
     url: img_2,
     title: "Women's tracksuit Q109",
     price: "30.00",
     rating: 4,
     ratgold: stargold,
     ratgrey: stargrey,
-    to: "/Product/women/1",
+    to: "Product/women",
   },
   {
-    id: 3,
+    id: "3",
     url: img_3,
     title: "Women's tracksuit Q109",
     price: "30.00",
     rating: 4,
     ratgold: stargold,
     ratgrey: stargrey,
-    to: "/Product/women/1",
+    to: "Product/women",
   },
   {
-    id: 4,
+    id: "4",
     url: img_4,
     title: "Women's tracksuit Q109",
     price: "30.00",
     rating: 4,
     ratgold: stargold,
     ratgrey: stargrey,
-    to: "/Product/women/1",
+    to: "Product/women",
   },
   {
-    id: 5,
+    id: "5",
     url: img_5,
     title: "Women's tracksuit Q109",
     price: "30.00",
     rating: 4,
     ratgold: stargold,
     ratgrey: stargrey,
-    to: "/Product/women/1",
+    to: "Product/women",
   },
   {
-    id: 6,
+    id: "6",
     url: img_6,
     title: "Women's tracksuit Q109",
     price: "30.00",
     rating: 4,
     ratgold: stargold,
     ratgrey: stargrey,
-    to: "/Product/women/1",
+    to: "Product/women",
   },
   {
-    id: 7,
+    id: "7",
     url: img_7,
     title: "Women's tracksuit Q109",
     price: "30.00",
     rating: 4,
     ratgold: stargold,
     ratgrey: stargrey,
-    to: "/Product/women/1",
+    to: "Product/women",
   },
   {
-    id: 8,
+    id: "8",
     url: img_8,
     title: "Women's tracksuit Q109",
     price: "30.00",
     rating: 4,
     ratgold: stargold,
     ratgrey: stargrey,
-    to: "/Product/women/1",
+    to: "Product/women",
   },
 ];
 
@@ -112,10 +112,10 @@ function WomenMain(props) {
                  
                     <div
                       className={classes.block}
-                      data-test-id=""
+                      data-test-id='clothes-card-women'
                     >
-                      <div key={i.id} className={classes.img}>
-                        <Link to={i.to}>
+                      <div  className={classes.img}>
+                        <Link to={`/${i.to}/${i.id}`}>
                           <img src={i.url} alt="" />
                         </Link>
                       </div>

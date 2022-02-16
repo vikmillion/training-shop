@@ -18,10 +18,81 @@ import american from "../footer/images/american-express.png";
 import classes from "./Footer.module.css";
 import { Link } from 'react-router-dom';
 
+const linkes1 = [
+ 
+  {
+    id: 1,
+    path: "Women",
+    title: "Women",
+  },
+  {
+    id: 2,
+    path: "Men",
+    title: "Men",
+  },
+  {
+    id: 3,
+    path: "Accessories",
+    title: "Accessories",
+  },
+  {
+    id: 4,
+    path: "Beauty",
+    title: "Beauty",
+  },
+];
+const linkes2 = [
+  {
+    id: 1,
+    path: "AboutUs",
+    title: "About Us",
+  },
+  {
+    id: 2,
+    path: "Blog",
+    title: "Blog",
+  },
+  {
+    id: 3,
+    path: "Contact",
+    title: "Contact",
+  },
+  {
+    id: 4,
+    path: "FAQs",
+    title: "FAQs",
+  },
+];
+const linkes3 = [
+  {
+    id: 1,
+    path: "Terms",
+    title: "Terms & Conditions",
+  },
+  {
+    id: 2,
+    path: "Returns",
+    title: "Returns & Exchanges",
+  },
+  {
+    id: 3,
+    path: "Shipping",
+    title: "Shipping & Delivery",
+  },
+  {
+    id: 4,
+    path: "Privacy",
+    title: "Privacy Policy",
+  },
+];
+
+
+
+
 function Footer(props) {
   return (
     <>
-      <div className={classes.footer} data-test-id='footer'>
+      <div className={classes.footer} data-test-id="footer">
         <div className={classes.blockBlack}>
           <div className={classes.div1}>
             BE IN TOUCH WITH US:
@@ -40,34 +111,39 @@ function Footer(props) {
             <div className={classes.div3}>
               <div className={classes.upper}>CATEGORIES</div>
               <div>
-                <Link
-                  to="/Men"
-                  className={classes.linkUnder}
-                  data-test-id={"menu-link-men"}
-                >
-                  Men
-                </Link>
-                <br />
-                <Link
-                  to="/Women"
-                  className={classes.linkUnder}
-                  data-test-id={"menu-link-women"}
-                >
-                  Women
-                </Link>{" "}
-                <br /> Accessories <br /> Beauty
+                {linkes1.map((i) => (
+                  <>
+                    <Link
+                      to={i.path}
+                      data-test-id={`footer-nav-link-${i.path}`}
+                      className={classes.linkUnder}
+                    >
+                      {i.title}
+                    </Link>{" "}
+                    <br></br>
+                  </>
+                ))}
               </div>
             </div>
 
             <div className={classes.div3}>
-              <div className={classes.upper}>Infomation</div>
-              <div>
-                About Us <br /> Contact Us <br /> Blog <br /> FAQs
-              </div>
+              <div className={classes.upper}>Information</div>
+              {linkes2.map((i) => (
+                <>
+                  <Link
+                    to={i.path}
+                    data-test-id={`footer-nav-link-${i.path}`}
+                    className={classes.linkUnder}
+                  >
+                    {i.title}
+                  </Link>{" "}
+                  <br></br>
+                </>
+              ))}
             </div>
             <div className={classes.div3}>
               <div className={classes.upper}>USEFUL LINK </div>
-              <div>
+              <div className={classes.linkUnder}>
                 Terms & Conditions <br /> Returns & Exchanges <br /> Shipping &
                 Delivery <br />
                 Privacy Policy
@@ -75,7 +151,7 @@ function Footer(props) {
             </div>
             <div className={classes.div3}>
               <div className={classes.upper}>CONTACT US</div>
-              <div>
+              <div className={classes.linkUnder}>
                 <img src={place} alt="" /> Belarus, Gomel, Lange 17 <br />
                 <img src={call} alt="" /> +375 29 100 20 30 <br />
                 <img src={clock} alt="" /> All week 24/7 <br />

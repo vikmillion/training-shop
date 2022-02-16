@@ -1,12 +1,8 @@
 
 
 .blockBlack {
-    /* display: flex; */
-    /* position: absolute; */
     margin-top: 6%;
 
-
-    /* width: 1280px; */
     height: 56px;
     background: #121212;
     justify-items: center;
@@ -93,11 +89,11 @@ margin-top: 2%;
 }
 .underline{
      text-decoration-line: underline;
+     
 }
 .blockBottom
 {
     display: flex;
-    /* width: 1280px; */
     justify-content: space-around;
     margin-top: 2%;
 }
@@ -111,4 +107,13 @@ margin-top: 2%;
 }
 .linkUnder{
     text-decoration: none;
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 34px;
+
+    color: #121212;
+
+    opacity: 0.8;
 }

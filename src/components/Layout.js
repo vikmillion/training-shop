@@ -13,9 +13,9 @@ const Layout = () => {
       </div>
 
       <Outlet />
-      <footer data-test-id="footer">
+      {/* <footer data-test-id="footer"> */}
         <Footer></Footer>
-      </footer>
+      {/* </footer> */}
     </>
   );
 };

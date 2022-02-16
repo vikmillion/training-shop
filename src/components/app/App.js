@@ -32,12 +32,27 @@ function App() {
             <Route path="Accessories" element={<Accessories />}></Route>
             <Route path="Blog" element={<Blog />}></Route>
             <Route path="Contact" element={<Contact />}></Route>
-            <Route path="Product/*" element={<Product />}>
+            <Route path="product/*" element={<Product />}>
              
               <Route path="women/*" >
-              <Route path="1" element={<Women1 />}></Route></Route>{" "}
+                <Route path="1" element={<Women1 />}></Route>
+                <Route path="2" element={<Women1 />}></Route>
+                <Route path="3" element={<Women1 />}></Route>
+                <Route path="4" element={<Women1 />}></Route>
+                <Route path="5" element={<Women1 />}></Route>
+                <Route path="6" element={<Women1 />}></Route>
+                <Route path="7" element={<Women1 />}></Route>
+                <Route path="8" element={<Women1 />}></Route>
+              </Route>{" "}
               <Route path="men/*" >
                 <Route path="1" element={<Men1 />}></Route>
+                <Route path="2" element={<Men1 />}></Route>
+                <Route path="3" element={<Men1 />}></Route>
+                <Route path="4" element={<Men1 />}></Route>
+                <Route path="5" element={<Men1 />}></Route>
+                <Route path="6" element={<Men1 />}></Route>
+                <Route path="7" element={<Men1 />}></Route>
+                <Route path="8" element={<Men1 />}></Route>
               </Route>
             </Route>
 

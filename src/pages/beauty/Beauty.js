@@ -1,10 +1,13 @@
 import React from 'react';
+import Main4 from './../main-page/Main4';
 
 function Beauty(props) {
     return (
-        <div>
+        <div >
             Beauty
+ <Main4></Main4>
         </div>
+       
     );
 }
 
