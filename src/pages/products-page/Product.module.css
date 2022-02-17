@@ -3,27 +3,48 @@
 
 
 @media (min-width: 768px) and (max-width: 979px) {
-    .container3 {
+    .container2 {
         /* max-width: 870px; */
+        flex-direction: column;
+    }
+    .imgS{
+        flex-direction:row !important;
+    }
+    .imgTextBlock{
+        flex-direction: column;
     }
 
 
 }
 
 @media (min-width: 450px) and (max-width: 767px) {
-    .container3 {
-        /* max-width: 620px; */
-        /* flex-direction: column; */
+    .container2 {
+       flex-direction: column;
     }
+      .imgS {
+          flex-direction: row !important;
+      }
+
+      .imgTextBlock {
+          flex-direction: column;
+      }
+
 
 
 
 }
 
 @media (max-width:449px) {
-    .container3 {
-        /* max-width: 360px; */
-        /* flex-direction: column; */
+    .container2 {
+        flex-direction: column;
+    }
+
+    .imgS {
+        flex-direction: row !important;
+    }
+
+    .imgTextBlock {
+        flex-direction: column;
     }
 
 
@@ -117,7 +138,7 @@ h1 {
     margin-left: 3%;
     margin-top: 2%;
     margin-right: 5%;
-    max-height: 1000px;
+    max-height: 2500px;
 }
 
 .contDiv {
@@ -467,7 +488,7 @@ button {
 
 .lastBlock {
     display: flex;
-    width: 1180px;
+    max-width: 1180px;
     margin-left: 4%;
     justify-content: space-between;
 }
