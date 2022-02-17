@@ -50,10 +50,10 @@ function ProductMain(props) {
             </div>
             <div className={classes.div2}>
               <div>
-                SKU:<b> 777</b>
+                SKU:<b> 777</b> &nbsp;
               </div>{" "}
               <div>
-                Availability: <b>In Stock</b>
+                &nbsp; Availability: <b>In Stock</b>
               </div>
             </div>
           </div>
@@ -96,12 +96,12 @@ function ProductMain(props) {
                 SIZE: <b>S</b>
               </div>
               <div className={classes.divBtn}>
-                <button>XS</button>
+                <button className={classes.btn3}>XS</button>
                 <button className={classes.btnBord}>
                   <b>S</b>
                 </button>
-                <button>M</button>
-                <button>L</button>
+                <button className={classes.btn3}>M</button>
+                <button className={classes.btn3}>L</button>
               </div>
               <div className={classes.sizeGuide}>
                 <img src={rack} alt="" /> Size guide
@@ -112,10 +112,10 @@ function ProductMain(props) {
                   <b>$379.99</b>
                 </div>
                 <button className={classes.Add}> ADD TO CARD</button>
-                <button>
+                <button className={classes.btn2}>
                   <img src={heart} alt="" />
                 </button>
-                <button>
+                <button className={classes.btn2}>
                   <img src={libra} alt="" />
                 </button>
               </div>
