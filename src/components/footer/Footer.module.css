@@ -1,3 +1,28 @@
+@media (min-width: 768px) and (max-width: 979px) {
+    .container {
+        /* max-width: 870px; */
+        flex-direction: column;
+        align-items: center;
+
+
+
+    }
+
+}
+
+@media (min-width: 450px) and (max-width: 767px) {
+    .container {
+        /* max-width: 620px;  */
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+}
+
+@media (max-width:449px) {
+
+}
 
 .footer{
        margin: 3% 0 0 3%;
@@ -5,17 +30,20 @@
 }
 .blockBlack {
     /* margin-top: 6%; */
-
+display: flex;
     height: 56px;
     background: #121212;
     justify-items: center;
-    align-items: center;
+    align-items: stretch;
     padding-top: 1%;
+    max-width: 1280px;
+    flex-direction: column;
+    padding: 1% 5%;
 }
 
 .div1 {
     display: flex;
-    margin-left: 7%;
+    /* margin-left: 7%; */
 
     color: #FFFFFF;
     align-items: baseline;
@@ -42,7 +70,7 @@ input {
 
 .btn {
     height: 32px;
-    width: 120px;
+    width: 120px !important;
     color: #FFFFFF;
     border: 1px solid white;
     background-color: #121212;

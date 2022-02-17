@@ -1,125 +1,152 @@
 @media (min-width: 768px) and (max-width: 979px) {
     .container {
         max-width: 870px;
+      justify-content: center;
+      padding: 3% -5%  0 5%;
+
+    }
+
+    .block {
+
     }
 }
 
-@media (min-width: 481px) and (max-width: 767px) {
+@media (min-width: 450px) and (max-width: 767px) {
     .container {
-        max-width: 620px;
+        /* max-width: 620px; */
     }
 }
 
 @media (max-width:480px) {
     .container {
-        max-width: 360px;
+        /* max-width: 360px; */
     }
 }
 
-.container{
-    display: flex; 
-    background: url("./images/imgMain5.png"); height: 580px;
-    margin-top: 7%;
+.container {
+    display: flex;
+
+    /* height: 580px; */
+    /* margin-top: 7%; */
     align-items: center;
-    justify-content: center;
-       margin: 3% 0 0 3%;
-       padding: 0% 0.1%;
+   justify-content:center;
+    margin: 3% 0% 0 5%;
+    padding: 0% 4% 0 4%; 
+max-width: 1050px;
+
 
 }
-.box{
+
+.box {
     display: flex;
     align-items: center;
+    background-image: url("./images/imgMain5.png");
+    background-position: center;
+    background-repeat: no-repeat;
 }
-.img6 img{
- 
+
+.img6 img {
+
     margin-top: 25%;
     /* margin-left:0%; */
     /* margin-left: 10%; */
 }
-.img6{
-     /* flex:auto; */
+
+.img6 {
+    /* flex:auto; */
 }
-.img7{
-     /* flex:auto; */
+
+.img7 {
+    /* flex:auto; */
 }
-.img7 img{
-/* margin-left: -20%; */
+
+.img7 img {
+    /* margin-left: -20%; */
 }
-.block{
+
+.block {
     display: flex;
     width: 532px;
     height: 461px;
+
     background: white;
     /* vertical-align: middle; */
     flex-direction: column;
-  justify-content: space-around;
-  align-content: center;
-  align-items: center;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
 }
 
 
 .div1 {
-  display: flex;
-  z-index:1;
+    display: flex;
+    z-index: 1;
 }
 
 .div2 {
-   display: flex;
-   align-items: center;
- 
+    display: flex;
+    align-items: center;
+
+    margin: 0;
 }
 
 
-button{
-    background-color: black;
-    color:white;
-    width: 340px;
+button {
+    background-color: black !important;
+    color: white !important;
+    width: 75% !important;
     height: 64px;
     margin-bottom: 10%;
 }
-.blockdiv1{
-font-family: Spartan;
-font-style: normal;
-font-weight: 600;
-font-size: 12px;
-line-height: 13px;
-display: flex;
 
-letter-spacing: 0.06em;
-text-transform: uppercase;
+.blockdiv1 {
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 13px;
+    display: flex;
 
-/* dark */
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 
-color: #121212;
+    /* dark */
 
-opacity: 0.4;
-padding-top: 10%;
+    color: #121212;
+
+    opacity: 0.4;
+    padding-top: 10%;
 }
-.blockdiv2{
-   
-   display: flex;
-   width: 282px;
-   height: 72px ;
-flex-direction: column;
-align-items: center;
-  
+
+.blockdiv2 {
+
+    display: flex;
+    /* width: 282px;
+    height: 72px; */
+    flex-direction: column;
+    align-items: center;
+
 }
-.blockdiv3{
+
+.blockdiv3 {
     padding-top: 5%;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 18px;
     color: #121212;
-font-family: Spartan;;
+    font-family: Spartan;
+    ;
     opacity: 0.4;
 
 }
-span{
+
+span {
     color: red;
     font-style: normal;
 }
-.subsc{
+
+.subsc {
     font-family: Spartan;
     font-style: normal;
     font-weight: 600;
@@ -128,7 +155,7 @@ span{
     /* or 138% */
 
     display: flex;
- 
+
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
@@ -136,9 +163,10 @@ span{
 
     color: #121212;
 
- white-space: nowrap;
+    white-space: nowrap;
 
 }
+
 .subsc2 {
     font-family: Spartan;
     font-style: normal;
@@ -155,7 +183,7 @@ span{
     /* dark */
 
     color: #121212;
-  
+
     white-space: nowrap;
 
 }

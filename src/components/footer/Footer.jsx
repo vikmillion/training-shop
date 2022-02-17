@@ -92,7 +92,7 @@ const linkes3 = [
 function Footer(props) {
   return (
     <>
-      <div className={classes.footer} data-test-id="footer">
+      <footer className={classes.footer} data-test-id="footer">
         <div className={classes.blockBlack}>
           <div className={classes.div1}>
             BE IN TOUCH WITH US:
@@ -182,7 +182,7 @@ function Footer(props) {
             <div className={classes.underline}>Clevertec.ru/training</div>
           </div>
         </div>
-      </div>
+      </footer>
     </>
   );
 }

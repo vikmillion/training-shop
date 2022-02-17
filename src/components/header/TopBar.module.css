@@ -15,7 +15,7 @@
     line-height: 12px;
        margin: 0% 0 0 0%;
        padding: 0% 2%;
-    max-width: 1310px;
+    max-width: 1280px;
 
 }
 
@@ -75,6 +75,7 @@ display: flex;
 flex: 20%;
 justify-content: flex-end;
 /* flex-basis: 20%; */
+/* padding: 0 0 0 5%; */
 }
 
 .div2 img, .div3 img, .div5 img{
