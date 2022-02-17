@@ -16,6 +16,7 @@ import AboutUs from "../../pages/about/AboutUs";
 import Product from "../../pages/products-page/Product";
 import Women1 from './../../pages/products-page/Women/Women1';
 import Men1 from "../../pages/products-page/Men/Men1";
+// import Footer from "../footer/Footer";
 
 function App() {
   return (
@@ -59,6 +60,7 @@ function App() {
             <Route path="*" element={<Error />}></Route>
           </Route>
         </Routes>
+        {/* <Footer></Footer> */}
       </div>
     </>
   );

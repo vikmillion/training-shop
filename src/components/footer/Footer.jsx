@@ -16,10 +16,9 @@ import discover from "../footer/images/discover.png";
 import american from "../footer/images/american-express.png";
 
 import classes from "./Footer.module.css";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const linkes1 = [
- 
   {
     id: 1,
     path: "men",
@@ -86,25 +85,24 @@ const linkes3 = [
   },
 ];
 
-
-
-
 function Footer(props) {
   return (
     <>
-      <footer className={classes.footer} data-test-id="footer">
-        <div className={classes.blockBlack}>
-          <div className={classes.div1}>
-            BE IN TOUCH WITH US:
-            <input type="text" placeholder="Enter you email" />
-            <div>
-              <button className={classes.btn}> JOIN US</button>
-            </div>{" "}
-            <div className={classes.blockImg}>
-              <img src={facebook} alt="" />
-              <img src={twitter} alt="" />
-              <img src={instargam} alt="" />
-              <img src={pinterest} alt="" />
+      <div className={classes.footer} data-test-id="footer">
+        {/* <div className={classes.containerBox}> */}
+          <div className={classes.blockBlack}>
+            {/* <div className={classes.div1}> */}
+              BE IN TOUCH WITH US:
+              <input type="text" placeholder="Enter you email" />
+              <div>
+                <button className={classes.btn}> JOIN US</button>
+              </div>{" "}
+              <div className={classes.blockImg}>
+                <img src={facebook} alt="" />
+                <img src={twitter} alt="" />
+                <img src={instargam} alt="" />
+                <img src={pinterest} alt="" />
+              {/* </div> */}
             </div>
           </div>
           <div className={classes.linkGroup}>
@@ -155,7 +153,6 @@ function Footer(props) {
                   <br></br>
                 </>
               ))}
-              
             </div>
             <div className={classes.div3}>
               <div className={classes.upper}>CONTACT US</div>
@@ -181,8 +178,8 @@ function Footer(props) {
             </div>
             <div className={classes.underline}>Clevertec.ru/training</div>
           </div>
-        </div>
-      </footer>
+        {/* </div> */}
+      </div>
     </>
   );
 }
