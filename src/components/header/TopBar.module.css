@@ -3,7 +3,7 @@
 .container {
     
     display: flex;
-    height: 24px;
+    min-height: 24px;
     background-color: #121212;
     color: #FFFFFF;
     justify-content: space-around;
@@ -13,11 +13,9 @@
     font-weight: 400;
     font-size: 11px;
     line-height: 12px;
-    /* margin: 0px auto; */
-    padding: 0% 0.1%;
-       margin: 0% 0 0 3%;
-       padding: 0% 0.1%;
-    /* min-width: 1310px; */
+       margin: 0% 0 0 0%;
+       padding: 0% 2%;
+    max-width: 1310px;
 
 }
 
@@ -29,16 +27,18 @@
 @media (min-width: 768px) and (max-width: 979px) {
     .container{
     /* max-width: 870px; */
+    align-items: center;
 
 }
 }
-@media (min-width: 481px) and (max-width: 767px)  {
+@media (min-width: 441px) and (max-width: 767px)  {
     .container{
         /* max-width: 620px; */
     }
 }
-@media (max-width:360px) {
+@media (max-width:440px) {
     .container {
+        min-width: 440px;
         flex-direction: column;
 
         /* max-width:360px; */
@@ -73,6 +73,7 @@
 .div5 {
 display: flex;
 flex: 20%;
+justify-content: flex-end;
 /* flex-basis: 20%; */
 }
 

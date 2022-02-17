@@ -2,39 +2,95 @@
     .container {
         /* max-width: 870px; */
         flex-direction: column;
+        align-items: center;
+        
        
+
     }
-    .textAfter{
+
+    .div2 {
+        padding: 0% 2% 3% 0%;
+        margin: 3% 0%;
+    }    .div2_1 {
+        /* margin: 3% 0; */
+           padding: 0% 2% 3% 0%;
+           /* margin: 3% 2%; */
+    }
+
+    .textAfter {
         /* max-width: 870px; */
         flex-direction: column;
+            align-items: center;
     }
-  
+    .imgBefore{
+            align-items: center;
+    }
+
 }
 
 @media (min-width: 450px) and (max-width: 767px) {
     .container {
         /* max-width: 620px;  */
         flex-direction: column;
+        align-items: center;
+        
     }
-    .textAfter{
-         /* max-width: 620px; */
-         flex-direction: column;
+
+    .textAfter {
+        /* max-width: 620px; */
+        flex-direction: column;
+        /* padding: 0% 5% 3% 0%;
+        margin: 0% 5% 0 0; */
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .div2_1 {
+        /* margin: 3% 0; */
+           padding: 0% 2% 3% 0%;
+           /* margin: 3% 2%; */
+    }
+    .div2{
+          padding: 0% 2% 3% 0%;
+          margin: 3% 0%;
+    }
+    .imgBefore{
+            align-items: center;
     }
 }
 
 @media (max-width:449px) {
     .container {
-        max-width: 360px;
+        /* max-width: 440px; */
+        min-width: 430px;
         flex-direction: column;
     }
-    .div2_1{
-        /* flex-direction: column;
+
+    .div2_1 {
+        flex-direction: column;
         justify-content: center;
-        align-items: flex-end; */
+        align-items: center;
+        /* max-width: 490px; */
+        /* margin: 0 0% 0 50%; */
+        /* padding: 3% 0% 3% 0%; */
+        min-width: 430px;
+        padding: 3% 2% 3% 0%;
+        margin: 3% 2%;
+
+
+
     }
-    .textAfter{
-         /* max-width: 360px; */
-         flex-direction: column;
+
+    .textAfter {
+        /* max-width: 360px; */
+        flex-direction: column;
+        padding: 3% 0% 3% 0%;
+
+    }
+
+    .div2 {
+        max-width: 440px;
     }
 }
 
@@ -45,22 +101,23 @@
     /* width: 1280px; */
     justify-content: center;
 
-       margin: 3% 0 0 3%;
-       padding: 0% 0.1%;
+    margin: 3% 0 0 3%;
+    padding: 0% 0.1%;
     /* margin-top: 3%;
    
      padding: 0px 15px; */
-     /* min-width: 1310px; */
-gap: 3%;
+    max-width: 1280px;
+    gap: 3%;
 }
 
 .div1 {
-flex:50%;
+    flex: 50%;
     display: flex;
-    width: 540px;
-    height: 490px;
-    background: url("./images/imgMain1.png");
+    max-width: 540px;
+    /* height: 490px; */
+    background-image: url("./images/imgMain1.png");
     background-repeat: no-repeat;
+    background-position: center;;
 }
 
 .bannerDiv {
@@ -129,15 +186,17 @@ flex:50%;
 }
 
 .div2 {
-    flex:50%;
+    flex: 50%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    max-width: fit-content;
 }
 
 .div2_1 {
     /* flex: auto; */
     display: flex;
+    gap: 5%;
 }
 
 .wom,
@@ -151,12 +210,14 @@ flex:50%;
 
 .wom {
     background-image: url("./images/imgMain2.png");
+    background-position: center;
 
 }
 
 .men {
     background-image: url("./images/imgMain3.png");
-    margin-left: 5%;
+    background-position: center;
+    /* margin-left: 5%; */
 }
 
 .bannerS {
@@ -174,7 +235,8 @@ flex:50%;
 .div2_2 {
     display: flex;
     background-image: url("./images/imgMain4.png");
-    width: 540px;
+    background-position: center;
+    /* width: 540px; */
     height: 260px;
     background-repeat: no-repeat;
     justify-content: space-around;
@@ -213,25 +275,30 @@ flex:50%;
 
 }
 
-.textAfter{
+.textAfter {
     display: flex;
     margin-top: 3%;
-  justify-content: space-around;
-     margin: 3% 0 0 3%;
-     padding: 0% 0.1%;
-  
-}
-
-.imgBefore{
-display: flex;    
+    justify-content: space-between;
+    /* justify-content: space-around; */
+    margin: 3% 0 0 3%;
+    padding: 0% 0.1%;
+    max-width: 1280px;
 
 }
-.imgBefore img{
+
+.imgBefore {
+    display: flex;
+    margin: 0 3% 0 3%;
+    align-items: center;
+
+}
+
+.imgBefore img {
     /* margin-right: 10px; */
 
 }
-.divWidth{
-   width: 302px; 
-   white-space: nowrap;
-}
 
+.divWidth {
+    width: 302px;
+    white-space: nowrap;
+}
