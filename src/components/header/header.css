@@ -6,8 +6,9 @@
    
 
     .nav-links {
-        visibility: collapse;
-        display: none;
+        /* visibility: collapse; */
+        transform: translateY(-150%);
+       
     }
 
     .navbar .nav-links-mobile {
@@ -24,7 +25,8 @@
         max-block-size: fit-content;
         max-inline-size: fit-content;
         max-width: 900px;
-       
+       transform: translateX(0);
+        transition: all 0.3s;
     }
 
     .burgerMenu {

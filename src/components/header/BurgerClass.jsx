@@ -69,7 +69,7 @@ const BurgerClass = () => {
         </div>
 
         <div
-          className={classNames("nav-links", { "nav-links-mobile": isMobile })}
+          className={classNames("nav-links", { "nav-links-mobile": isMobile })   } onClick={()=> setIsMobile(false)}
         >
           {linkes.map((i) => (
             <>
