@@ -3,7 +3,7 @@ import search from "../header/images/search.svg";
 import planet from "../header/images/planet.svg";
 import user from "../header/images/user.svg";
 import shopcart from "../header/images/shopcart.svg";
-import classes from "./Header.module.css";
+
 import { Link } from "react-router-dom";
 import "./header.css";
 import classNames from "classnames";
