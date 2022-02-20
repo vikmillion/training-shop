@@ -3,7 +3,7 @@ import search from "../header/images/search.svg";
 import planet from "../header/images/planet.svg";
 import user from "../header/images/user.svg";
 import shopcart from "../header/images/shopcart.svg";
-import classes from "./Header.module.css";
+import classes from "./nav.module.css";
 import { Link } from "react-router-dom";
 
 const linkes = [
@@ -11,50 +11,44 @@ const linkes = [
     id: 1,
     path: "AboutUs",
     title: "About Us",
- 
   },
   {
     id: 2,
     path: "Women",
     title: "Women",
-
   },
   {
     id: 3,
     path: "Men",
     title: "Men",
-  
   },
   {
     id: 4,
     path: "Beauty",
     title: "Beauty",
-  
   },
   {
     id: 5,
     path: "Accessories",
     title: "Accessories",
-
   },
   {
     id: 6,
     path: "Blog",
     title: "Blog",
-  
   },
   {
     id: 7,
     path: "Contact",
     title: "Contact",
-  
   },
 ];
 
-function Header2(props) {
+function Nav(props) {
   return (
     <>
-      <div className={classes.container}>2
+      <div className={classes.container}>
+        {" "}
         <div className={classes.div2}>
           <Link
             to="/"
@@ -64,6 +58,7 @@ function Header2(props) {
             CleverShop
           </Link>
         </div>
+        <div className={classes.box}>
         {linkes.map((i) => (
           <>
             <Link
@@ -76,7 +71,7 @@ function Header2(props) {
               {i.title}{" "}
             </Link>
           </>
-        ))}
+        ))}</div>
         <div className={classes.div4}>
           <img src={search} alt="" />
           <img src={planet} alt="" />
@@ -88,4 +83,4 @@ function Header2(props) {
   );
 }
 
-export default Header2;
+export default Nav;

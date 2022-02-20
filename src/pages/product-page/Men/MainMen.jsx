@@ -142,15 +142,9 @@ function MainMen(props) {
             </div>
           </div>
           <div className={classes.See}>
-           
-            <Link
-              to="/Men"
-             
-              data-test-id={"menu-link-men"}
-            >
-             SEE ALL
+            <Link to="/Men" data-test-id={"menu-link-men"}>
+              SEE ALL
             </Link>
-          
           </div>
         </div>
       </>

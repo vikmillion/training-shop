@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@media (max-width: 980px) {
+
+    .navbar {
+        /* display: flex; */
+        /* min-width: 360px; */
+        /* margin: 0 5%; */
+        /* padding: 0 5%; */
+    }
+
+    .nav-links {
+        visibility: collapse;
+        /* display: none; */
+    }
+
+    .navbar .nav-links-mobile {
+        visibility: visible;
+        display: block !important;
+        position: absolute;
+        top: 90px;
+      
+    padding:  0 50%;
+        flex-direction: column;
+        z-index: 1;
+        background-color:white;
+        opacity: 0.8;
+        max-block-size: fit-content;
+        max-inline-size: fit-content;
+        max-width: 900px;
+       
+    }
+
+    .burgerMenu {
+        display: flex;
+        flex-direction: column;
+        background-color: white !important;
+        position: absolute;
+        top: -5%;
+        max-width: 40px !important;
+        height: 32px !important;
+        right: -135%;
+        /* transform: translateX(0); */
+        /* margin-right:  5%; */
+
+
+
+
+    }
+
+    .header_logo {
+        position: absolute;
+        top: 7%;
+        left: 6%;
+        font-family: Playfair Display SC;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 32px;
+        color: #121212;
+        /* transform: translateY(-10%); */
+
+
+
+    }
+
+    .subscribe {
+        position: absolute;
+        top: 7%;
+        right: 20%;
+        margin-right: 5%;
+
+
+    }
+
+    .about,
+    .contact,
+    .blog,
+    .accessories,
+    .beauty,
+    .men,
+    .women {
+        display: flex;
+        text-decoration: none;
+        font-family: Spartan;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        color: #121212 !important;
+    /* max-block-size: fit-content; */
+    max-inline-size: fit-content;
+    max-width: 900px;
+
+
+    }
+
+
+    span {
+
+        background-color: rgb(144, 144, 144) !important;
+        width: 32px !important;
+        height: 2px !important;
+        margin: 4px !important;
+        border-radius: 2px !important;
+    }
+
+    .open1 {
+        transform: rotate(45deg) translateY(14px) !important;
+    }
+
+    .open2 {
+        opacity: 0;
+    }
+
+    .open3 {
+        transform: rotate(-45deg) translateY(-14px) !important;
+    }
+
+    .close1 {
+        transform: rotate(0);
+    }
+
+    .close2 {
+        opacity: 1;
+    }
+
+    .close3 {
+        transform: rotate(0);
+    }
+
+
+}
+
+/* ----------------------------------- */
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 75px;
+    max-width: 1280px;
+    margin: 0 10%;
+
+}
+
+.subscribe {
+
+    display: flex;
+
+}
+
+.subscribe img {
+    padding: 0 5%;
+    margin: 0 5%;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 1280px;
+    max-height: 70px;
+    align-items: flex-end;
+    ;
+
+}
+
+
+.burgerMenu {
+    /* display: flex;
+    flex-direction: column;
+    background-color: white !important; */
+    /* position: absolute;
+    top: 40px;
+    max-width: 40px;
+    height: 32px; */
+    /* right: 3%; */
+    /* transform: translateX(-200%); */
+}
+
+
+
+
+.header_logo {
+    font-family: Playfair Display SC;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 32px;
+    color: #121212;
+
+
+}
+
+span {
+
+    background-color: rgb(144, 144, 144) !important;
+    width: 32px !important;
+    height: 2px !important;
+    margin: 4px !important;
+    border-radius: 2px !important;
+}
+
+.open1 {
+    transform: rotate(45deg) translateY(14px);
+}
+
+.open2 {
+    opacity: 0;
+}
+
+.open3 {
+    transform: rotate(-45deg) translateY(-14px) !important;
+}
+
+.close1 {
+    transform: rotate(0);
+}
+
+.close2 {
+    opacity: 1;
+}
+
+.close3 {
+    transform: rotate(0);
+}
+
+
+
+.about,
+.contact,
+.blog,
+.accessories,
+.beauty,
+.men,
+.women {
+    /* display: flex; */
+    text-decoration: none;
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #121212 !important;
+    padding: 1em;
+    margin: 0 10px;
+
+}

@@ -6,15 +6,11 @@
 
     }
 
-    .block {
-
-    }
+  
 }
 
 @media (min-width: 401px) and (max-width: 767px) {
-    .container {
-        /* max-width: 620px; */
-    }
+  
 }
 
 @media (max-width:400px) {
@@ -75,17 +71,9 @@ max-width: 1050px;
     /* margin-left: 10%; */
 }
 
-.img6 {
-    /* flex:auto; */
-}
 
-.img7 {
-    /* flex:auto; */
-}
 
-.img7 img {
-    /* margin-left: -20%; */
-}
+
 
 .block {
     display: flex;
