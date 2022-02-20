@@ -61,15 +61,17 @@ const BurgerClass = () => {
   };
   return (
     <>
-      <div className="navbar">
-        <div>
+      <div className="navbar" >
+        <div >
           <Link to="/" className="header_logo" data-test-id="header-logo-link">
             CleverShop
           </Link>
         </div>
 
         <div
-          className={classNames("nav-links", { "nav-links-mobile": isMobile })   } onClick={()=> setIsMobile(false)}
+          data-test-id="burger-menu"
+          className={classNames("nav-links", { "nav-links-mobile": isMobile })}
+          onClick={() => setIsMobile(false)}
         >
           {linkes.map((i) => (
             <>
@@ -90,7 +92,11 @@ const BurgerClass = () => {
           <img src={planet} alt="" />
           <img src={user} alt="" />
           <img src={shopcart} alt="" />
-          <div className="burgerMenu" onClick={onClickMenu}>
+          <div
+            className="burgerMenu"
+            data-test-id="burger-menu-btn"
+            onClick={onClickMenu}
+          >
             {isMobile ? (
               <>
                 <span className="open1"></span>
