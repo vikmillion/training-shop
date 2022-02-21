@@ -99,16 +99,16 @@ const BurgerClass = () => {
           >
             {isMobile ? (
               <>
-                <span className="open1"></span>
-                <span className="open2"></span>
-                <span className="open3"></span>{" "}
+                <span className="open1 span"></span>
+                <span className="open2 span"></span>
+                <span className="open3 span"></span>{" "}
               </>
             ) : (
               <>
                 {" "}
-                <span className="close1"></span>
-                <span className="close2"></span>
-                <span className="close3"></span>
+                <span className="close1 span"></span>
+                <span className="close2 span"></span>
+                <span className="close3 span"></span>
               </>
             )}
           </div>

@@ -91,7 +91,7 @@
     }
 
 
-    span {
+    .span {
 
         background-color: rgb(144, 144, 144) !important;
         width: 32px !important;
@@ -181,7 +181,7 @@
 
 }
 
-span {
+.span {
 
     background-color: rgb(144, 144, 144) !important;
     width: 32px !important;

@@ -1,52 +1,56 @@
-import React from 'react';
-// import { Swiper, SwiperSlide } from 'swiper/react';
-// import { Navigation } from 'swiper';
-// import  'swiper/css/mavigation';
-// import 'swiper/css';
+import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper";
+import "swiper/css/navigation";
+import "swiper/css";
+import group from "./images/Group57.png";
+import group2 from "./images/Group56.png";
+import block from "./images/blockMain2.png";
+import block2 from "./images/blockMain3.png";
 
 
-import classes from "./Main.module.css";
+import  "./Main.css";
 
-function Main1(props) {
-    return (
-      <>
-        <div className={classes.container}>
-          <div className={classes.div1}>
-            <div className={classes.bannerDiv}>
-              <div className={classes.div1_1}>&lt;</div>
-              <div className={classes.banner}>
-                {" "}
-                <p className={classes.p1}>BANNER</p>
-                <p className={classes.p2}>YOUR TITLE TEXT</p>{" "}
-              </div>
-              <div className={classes.div1_2}>&gt;</div>
-            </div>
+
+
+function Main1(props) {  
+
+  return (
+    <>
+      <div className="container">
+        <Swiper
+          slidesPerView={"auto"}
+          centerInsufficientSlides={true}
+          centeredSlides={true}
+          spaceBetween={150}
+          navigation={true}
+          modules={[Navigation]}
+          className="mySwiper"
+        >
+          <SwiperSlide>
+            <img src={group} alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={group} alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={group} alt="" />
+          </SwiperSlide>
+        </Swiper>
+
+        <div className="box">
+          <div className="box2">
+            <div className="div2"><img src={block} alt="" /> </div>
+            <div className="div3"> <img src={ block2} alt="" /> </div>
           </div>
-          <div className={classes.div2}>
-            <div className={classes.div2_1}>
-              <div className={classes.wom}>
-                <div className={classes.bannerS}>
-                  {" "}
-                  <p className={classes.p3}> WOMEN</p>
-                </div>
-              </div>
-              <div className={classes.men}>
-                <div className={classes.bannerS}>
-                  {" "}
-                  <p className={classes.p3}> MEN</p>
-                </div>
-              </div>
-            </div>
-            <div className={classes.div2_2}>
-              <div className={classes.access}>
-                {" "}
-                <p className={classes.p3}>Accessories</p>{" "}
-              </div>
-            </div>
+
+          <div className="div4">
+            <img src={group2} alt="" />
           </div>
         </div>
-      </>
-    );
+      </div>
+    </>
+  );
 }
 
 export default Main1;
