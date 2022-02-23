@@ -37,8 +37,8 @@ justify-content: center;
 max-width: 1280px;
 justify-content: space-around;
 align-items: center;
-   margin: 3% 0 0 3%;
-   padding: 0% 0.1%;
+   margin: 3% auto;
+   padding: 0% 3%;
 
 }
 .div1{

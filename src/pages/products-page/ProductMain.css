@@ -26,10 +26,10 @@ cursor: pointer;
 
 }
 .vertical-buttom-up{
- transform:rotate(90deg);
+ transform:rotate(90deg) !important;
 }
 .vertical-buttom-down {
-    transform: rotate(90deg);
+    transform: rotate(90deg) !important;
 }
 .vertical-buttom-up, .horizont-button-next {
     transform: rotate(0deg);
@@ -72,6 +72,7 @@ cursor: pointer;
 .verCarousel{
     display: flex;
     max-width: 94px !important;
+    max-height: 500px;
 
 }
 .mySwiperS .wrapper{

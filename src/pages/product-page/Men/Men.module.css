@@ -63,7 +63,8 @@
     display: flex;
     max-width: 1280px;
     /* height: 955px; */
-    margin: 5% 5% 0 5%;
+    margin: 5% auto;
+    padding: 0 3%;
     justify-content: space-around;
 
 }
@@ -145,8 +146,10 @@ justify-content: space-evenly;
 }
 
 .menu_item {
-    margin-left: 4%;
-    margin-top: 2%;
+    display: flex;
+    justify-content: flex-start;
+    margin:0 auto;
+    padding: 0 5%;
 }
 
 .link {
