@@ -7,10 +7,12 @@
         /* max-width: 870px; */
         flex-direction: column;
     }
-    .imgS{
-        flex-direction:row !important;
+
+    .imgS {
+        flex-direction: row !important;
     }
-    .imgTextBlock{
+
+    .imgTextBlock {
         flex-direction: column;
     }
 
@@ -19,15 +21,16 @@
 
 @media (min-width: 450px) and (max-width: 767px) {
     .container2 {
-       flex-direction: column;
+        flex-direction: column;
     }
-      .imgS {
-          flex-direction: row !important;
-      }
 
-      .imgTextBlock {
-          flex-direction: column;
-      }
+    .imgS {
+        flex-direction: row !important;
+    }
+
+    .imgTextBlock {
+        flex-direction: column;
+    }
 
 
 
@@ -50,16 +53,33 @@
 
 }
 
+/* -------------------------------css------------------------ */
+
+.reviews {
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 18px;
+
+    color: #121212;
+}
+.div3{
+    display: flex;
+    flex-direction: column;
+}
 .menu_item {
-    margin-left: 4%;
-    margin-top: 2%;
+    max-width: 1280px;
+    margin: 2% auto;
+    padding: 0 2%;
 }
 
 .link {
     margin-left: 0.2%;
     margin-right: 0.2%;
 }
-.btn3{
+
+.btn3 {
     width: 40px !important;
     height: 40px !important;
     background: #F8F8F8 !important;
@@ -101,7 +121,8 @@ h1 {
     max-width: 1240px;
     display: flex;
     justify-content: space-between;
-    margin-left: 3%;
+    margin: 1% auto;
+    padding: 0 2%;
     /* padding-left: 3%;
     padding-right: 3%; */
 
@@ -113,6 +134,7 @@ h1 {
 
 .mainDiv {
     max-width: 1280px;
+    margin: auto;
 }
 
 .div2 {
@@ -133,12 +155,28 @@ h1 {
 }
 
 .container2 {
-    max-width: 1280px;
+    text-align: start;
     display: flex;
-    margin-left: 3%;
-    margin-top: 2%;
-    margin-right: 5%;
-    max-height: 2500px;
+    justify-content: center;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: stretch;
+    /* max-width: 1110px; */
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    /* -webkit-align-items: center; */
+    /* align-items: center; */
+    gap: 2em;
+    max-width: 1280px;
+  
+    padding: 0 2%;
+    margin: 2% auto;
+ 
 }
 
 .contDiv {
@@ -206,6 +244,8 @@ h1 {
 }
 
 .div5 {
+    display: flex;
+    flex-direction: column;
     font-family: Spartan;
     font-style: normal;
     font-weight: 600;
@@ -252,7 +292,7 @@ button {
     font-weight: 600;
     font-size: 12px;
     line-height: 13px;
- 
+
 
     /* dark */
 
@@ -488,9 +528,10 @@ button {
 
 .lastBlock {
     display: flex;
-    max-width: 1180px;
-    margin-left: 4%;
+    max-width: 1280px;
+    margin: 0% auto;
     justify-content: space-between;
+    padding: 0 2%;
 }
 
 .last1 {
@@ -501,9 +542,9 @@ button {
 
 .imgTextBlock {
     display: flex;
-    width: 1180px;
-    margin-left: 2%;
-    margin-top: 2%;
+    width: 1280px;
+  margin: 0 auto;
+  padding: 0 2%;
 
 }
 
@@ -567,4 +608,42 @@ button {
     color: #121212;
 
     opacity: 0.4;
+}
+
+
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    max-width: 540px;
+
+    /* Center slide text vertically */
+    /* display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex; */
+    display: flex;
+    /* -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center; */
+
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    color: grey;
+    font-size: 30px;
+
 }

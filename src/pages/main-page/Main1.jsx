@@ -25,7 +25,7 @@ function Main1(props) {
           spaceBetween={150}
           navigation={true}
           modules={[Navigation]}
-          className="mySwiper"
+          className="mySwiperMain"
         >
           <SwiperSlide>
             <img src={group} alt="" />

@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useCallback, useRef, useState } from "react";
+
+import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
+import { Navigation } from "swiper";
+import "swiper/css/navigation";
+import "swiper/css";
+import "swiper/css/thumbs";
+import "swiper/css/free-mode";
+
 import classes from "./Product.module.css";
-import up from "./images/up.svg";
-import down from "./images/down.svg";
+import "./ProductMain.css";
+// import up from "./images/up.svg";
+// import down from "./images/down.svg";
 import star from "./images/star.svg";
 import starGrey from "./images/starGrey.svg";
 import imgS1 from "./images/imgS1.png";
@@ -31,8 +40,37 @@ import imgM1 from "./images/imgM1.png";
 import imgM2 from "./images/imgM2.png";
 import imgM3 from "./images/imgM3.png";
 import imgM4 from "./images/imgM4.png";
+import { FreeMode, Thumbs } from "swiper";
+import { BsChevronDown, BsChevronUp } from "react-icons/bs";
+import { Controller } from "swiper";
+import SwiperCore, { Autoplay } from "swiper";
+
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+
+SwiperCore.use([Navigation]);
 
 function ProductMain(props) {
+  const [thumbsSwiper, setThumbsSwiper] = useState(null);
+
+  // const [firstSwiper, setFirstSwiper] = useState(null);
+  // const [secondSwiper, setSecondSwiper] = useState(null);
+
+  // const swiper = useSwiper();
+  // const swiperRef = React.useRef(null);
+  // const prevRef = useRef(null);
+  // const nextRef = useRef(null);
+
+  const swiperRef = useRef(null);
+  // SwiperCore.use([Autoplay]); // don't need navigation anymore
+
+  // const prevSlide = useCallback(() => {
+  //   swiperRef.current?.swiper.slidePrev();
+  // }, [swiperRef]);
+
+  // const nextSlide = useCallback(() => {
+  //   swiperRef.current?.swiper.slideNext();
+  // }, [swiperRef]);
+
   return (
     <>
       <div className="products-page" data-test-id="products-page">
@@ -41,12 +79,13 @@ function ProductMain(props) {
             <h1> Women's tracksuit Q109</h1>
           </div>
           <div className={classes.container}>
-            <div>
+            <div className={classes.reviews}>
               <img src={star} alt="" />
               <img src={star} alt="" />
               <img src={star} alt="" />
               <img src={star} alt="" />
-              <img src={star} alt="" />2 Reviews
+              <img src={star} alt="" />
+              &nbsp;2 Reviews
             </div>
             <div className={classes.div2}>
               <div>
@@ -58,27 +97,91 @@ function ProductMain(props) {
             </div>
           </div>
           <div className={classes.container2}>
-            <div className={classes.div3}>
-              <div className={classes.contDiv}>
-                <div>
-                  <img src={up} alt="" />
-                </div>
-
-                <div>
-                  <img src={down} alt="" />
-                </div>
+            <div className="vertical">
+              <div className="button-nav-vertical">
+                <div
+                  type="button"
+                  className="swiper-button-prev vertical-buttom-up"
+                ></div>
+                <div
+                  type="button"
+                  className="swiper-button-next vertical-buttom-down"
+                ></div>
               </div>
-              <div className={classes.imgS}>
-                <img src={imgS1} alt="" />
-                <img src={imgS2} alt="" />
-                <img src={imgS3} alt="" />
-                <img src={imgS4} alt="" />
+              <div className="verCarousel">
+                <Swiper
+                  // onSwiper={setThumbsSwiper}
+                  direction={"vertical"}
+                  onSwiper={setThumbsSwiper}
+                  slidesPerView={"auto"}
+                  centerInsufficientSlides={true}
+                  spaceBetween={10}
+                  // pagination={{
+                  //   clickable: true,
+                  // }}
+                  modules={[FreeMode, Navigation, Thumbs]}
+                  navigation={{
+                    prevEl: ".vertical-buttom-up",
+                    nextEl: ".vertical-buttom-down",
+                  }}
+                  freeMode={true}
+                  watchSlidesProgress={true}
+                  className="mySwiperS"
+                >
+                  {/* {" "}
+                <div className="button-nav">
+                  <div className="prev">
+                    {" "}
+                    <BsChevronUp />
+                  </div>
+                  <div className="next">
+                    <BsChevronDown />
+                  </div>
+                </div> */}
+                  <SwiperSlide>
+                    <img src={imgS1} alt="" />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <img src={imgS1} alt="" />{" "}
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <img src={imgS1} alt="" />{" "}
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <img src={imgS1} alt="" />{" "}
+                  </SwiperSlide>
+                </Swiper>
               </div>
             </div>
-            <div className={classes.div4}>
-              <img src={imgXL} alt="" />
-              <div className={classes.div4_1}> &lt; </div>
-              <div className={classes.div4_2}> &gt; </div>
+            <div className="horizCarousel">
+              <div className="swiper-button-prev vertical-buttom-up horizont-button-prev" />
+              <Swiper
+                slidesPerView={"auto"}
+                centerInsufficientSlides={true}
+                centeredSlides={true}
+                spaceBetween={100}
+                navigation={{
+                  prevEl: ".vertical-buttom-up",
+                  nextEl: ".vertical-buttom-down",
+                }}
+                thumbs={{ swiper: thumbsSwiper }}
+                modules={[FreeMode, Navigation, Thumbs]}
+                className="mySwiperXl"
+              >
+                <SwiperSlide>
+                  <img src={imgXL} alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={imgXL} alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={imgXL} alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src={imgXL} alt="" />
+                </SwiperSlide>
+              </Swiper>{" "}
+              <div className="swiper-button-next vertical-buttom-down horizont-button-next" />
             </div>
             <div className={classes.div5}>
               <div>
@@ -176,86 +279,197 @@ function ProductMain(props) {
           </div>
           <div className={classes.lastBlock}>
             <div className={classes.related}>RELATED PRODUCTS</div>
-            <div className={classes.last}>
-              <div className={classes.last1}> &lt; </div>
-              <div className={classes.last1}> &gt; </div>
-            </div>
+            <div className={classes.last}></div>
           </div>{" "}
           <div className={classes.imgTextBlock}>
-            <div className={classes.imgText}>
-              <div className={classes.imgText1}>
-                <img src={imgM1} alt="" />
+            <div className="button-nav">
+              <div className="prevLast">
+                <IoIosArrowBack />
               </div>
-              <div className={classes.descrip2}>
-                <div className={classes.title}>Women's tracksuit Q109</div>
-                <div className={classes.priceStar}>
-                  <div>$ 30.00</div>
-                  <div>
-                    <img src={star} alt="" />
-                    <img src={star} alt="" />
-                    <img src={star} alt="" />
-                    <img src={star} alt="" />
-                    <img src={starGrey} alt="" />
-                  </div>
-                </div>
+              <div className="nextLast">
+                {" "}
+                <IoIosArrowForward />
               </div>
             </div>
-            <div className={classes.imgText}>
-              <div className={classes.imgText1}>
-                <img src={imgM2} alt="" />
-              </div>
-              <div className={classes.descrip2}>
-                <div className={classes.title}>Women's tracksuit Q109</div>
-                <div className={classes.priceStar}>
-                  <div>
-                    $ 30.00 <span className={classes.crossed}> $ 60.00</span>
-                  </div>
-                  <div>
-                    <img src={star} alt="" />
-                    <img src={star} alt="" />
-                    <img src={star} alt="" />
-                    <img src={star} alt="" />
-                    <img src={starGrey} alt="" />
+            <Swiper
+              slidesPerView={4}
+              spaceBetween={30}
+              slidesPerGroup={4}
+              loop={true}
+              loopFillGroupWithBlank={true}
+              pagination={{
+                clickable: true,
+              }}
+              modules={[Navigation]}
+              // navigation={true}
+              navigation={{
+                nextEl: ".nextLast",
+                prevEl: ".prevLast",
+              }}
+              className="mySwiperLast"
+            >
+              {/* <div className="button-nav">
+                <div className="prevLast">
+                  <IoIosArrowBack />
+                </div>
+                <div className="nextLast">
+                  {" "}
+                  <IoIosArrowForward />
+                </div>
+              </div> */}
+              <SwiperSlide>
+                {" "}
+                <div className={classes.imgText1}>
+                  <img src={imgM1} alt="" />
+                </div>
+                <div className={classes.descrip2}>
+                  <div className={classes.title}>Women's tracksuit Q109</div>
+                  <div className={classes.priceStar}>
+                    <div>$ 30.00</div>
+                    <div className="stars">
+                      <img src={star} alt="" />
+                      <img src={star} alt="" />
+                      <img src={star} alt="" />
+                      <img src={star} alt="" />
+                      <img src={starGrey} alt="" />
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div className={classes.imgText}>
-              <div className={classes.imgText1}>
-                <img src={imgM3} alt="" />
-              </div>
-              <div className={classes.descrip2}>
-                <div className={classes.title}>Women's tracksuit Q109</div>
-                <div className={classes.priceStar}>
-                  <div>$ 30.00</div>
-                  <div>
-                    <img src={star} alt="" />
-                    <img src={star} alt="" />
-                    <img src={star} alt="" />
-                    <img src={star} alt="" />
-                    <img src={starGrey} alt="" />
+              </SwiperSlide>
+              <SwiperSlide>
+                {" "}
+                <div className={classes.imgText1}>
+                  <img src={imgM2} alt="" />
+                </div>
+                <div className={classes.descrip2}>
+                  <div className={classes.title}>Women's tracksuit Q109</div>
+                  <div className={classes.priceStar}>
+                    <div>$ 30.00</div>
+                    <div className="stars">
+                      <img src={star} alt="" />
+                      <img src={star} alt="" />
+                      <img src={star} alt="" />
+                      <img src={star} alt="" />
+                      <img src={starGrey} alt="" />
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div className={classes.imgText}>
-              <div className={classes.imgText1}>
-                <img src={imgM4} alt="" />
-              </div>
-              <div className={classes.descrip2}>
-                <div className={classes.title}>Women's tracksuit Q109</div>
-                <div className={classes.priceStar}>
-                  <div>$ 30.00</div>
-                  <div>
-                    <img src={star} alt="" />
-                    <img src={star} alt="" />
-                    <img src={star} alt="" />
-                    <img src={star} alt="" />
-                    <img src={starGrey} alt="" />
+              </SwiperSlide>
+              <SwiperSlide>
+                {" "}
+                <div className={classes.imgText1}>
+                  <img src={imgM3} alt="" />
+                </div>
+                <div className={classes.descrip2}>
+                  <div className={classes.title}>Women's tracksuit Q109</div>
+                  <div className={classes.priceStar}>
+                    <div>$ 30.00</div>
+                    <div className="stars">
+                      <img src={star} alt="" />
+                      <img src={star} alt="" />
+                      <img src={star} alt="" />
+                      <img src={star} alt="" />
+                      <img src={starGrey} alt="" />
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                {" "}
+                <div className={classes.imgText1}>
+                  <img src={imgM4} alt="" />
+                </div>
+                <div className={classes.descrip2}>
+                  <div className={classes.title}>Women's tracksuit Q109</div>
+                  <div className={classes.priceStar}>
+                    <div>$ 30.00</div>
+                    <div className="stars">
+                      <img src={star} alt="" />
+                      <img src={star} alt="" />
+                      <img src={star} alt="" />
+                      <img src={star} alt="" />
+                      <img src={starGrey} alt="" />
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                {" "}
+                <div className={classes.imgText1}>
+                  <img src={imgM1} alt="" />
+                </div>
+                <div className={classes.descrip2}>
+                  <div className={classes.title}>Women's tracksuit Q109</div>
+                  <div className={classes.priceStar}>
+                    <div>$ 30.00</div>
+                    <div className="stars">
+                      <img src={star} alt="" />
+                      <img src={star} alt="" />
+                      <img src={star} alt="" />
+                      <img src={star} alt="" />
+                      <img src={starGrey} alt="" />
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                {" "}
+                <div className={classes.imgText1}>
+                  <img src={imgM2} alt="" />
+                </div>
+                <div className={classes.descrip2}>
+                  <div className={classes.title}>Women's tracksuit Q109</div>
+                  <div className={classes.priceStar}>
+                    <div>$ 30.00</div>
+                    <div className="stars">
+                      <img src={star} alt="" />
+                      <img src={star} alt="" />
+                      <img src={star} alt="" />
+                      <img src={star} alt="" />
+                      <img src={starGrey} alt="" />
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                {" "}
+                <div className={classes.imgText1}>
+                  <img src={imgM3} alt="" />
+                </div>
+                <div className={classes.descrip2}>
+                  <div className={classes.title}>Women's tracksuit Q109</div>
+                  <div className={classes.priceStar}>
+                    <div>$ 30.00</div>
+                    <div className="stars">
+                      <img src={star} alt="" />
+                      <img src={star} alt="" />
+                      <img src={star} alt="" />
+                      <img src={star} alt="" />
+                      <img src={starGrey} alt="" />
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                {" "}
+                <div className={classes.imgText1}>
+                  <img src={imgM4} alt="" />
+                </div>
+                <div className={classes.descrip2}>
+                  <div className={classes.title}>Women's tracksuit Q109</div>
+                  <div className={classes.priceStar}>
+                    <div>$ 30.00</div>
+                    <div className="stars">
+                      <img src={star} alt="" />
+                      <img src={star} alt="" />
+                      <img src={star} alt="" />
+                      <img src={star} alt="" />
+                      <img src={starGrey} alt="" />
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+            </Swiper>
           </div>
         </div>
       </div>
@@ -264,3 +478,35 @@ function ProductMain(props) {
 }
 
 export default ProductMain;
+
+// <Swiper
+//               slidesPerView={"auto"}
+//               centerInsufficientSlides={true}
+//               centeredSlides={true}
+//               direction={"vertical"}
+//               spaceBetween={2}
+//               navigation={true}
+//               modules={[Navigation]}
+//               navigation={{
+//                 nextEl: ".swiper-button-next",
+//                 prevEl: ".swiper-button-prev",
+//               }}
+//               className="mySwiper2"
+//             >
+//               <div className="button-nav">
+//                 <div className="swiper-button-prev"> </div>
+//                 <div className="swiper-button-next"></div>
+//               </div>
+//               <SwiperSlide>
+//                 <img src={imgS1} alt="" />
+//               </SwiperSlide>
+//               <SwiperSlide>
+//                 <img src={imgS1} alt="" />
+//               </SwiperSlide>
+//               <SwiperSlide>
+//                 <img src={imgS1} alt="" />
+//               </SwiperSlide>
+//               <SwiperSlide>
+//                 <img src={imgS1} alt="" />
+//               </SwiperSlide>
+//             </Swiper>

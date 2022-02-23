@@ -92,7 +92,7 @@ function Footer(props) {
         {/* <div className={classes.containerBox}> */}
           <div className={classes.blockBlack}>
             {/* <div className={classes.div1}> */}
-              BE IN TOUCH WITH US:
+            <div className="beInTouch"> BE IN TOUCH WITH US:</div> 
               <input type="text" placeholder="Enter you email" />
               <div>
                 <button className={classes.btn}> JOIN US</button>

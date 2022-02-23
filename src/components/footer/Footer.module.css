@@ -86,15 +86,22 @@ max-width: fit-content;
 }
 .linkGroup{
     display: flex;
-    /* min-width: 1280px; */
-max-width: 1280px;
-margin: 1% 5% 0 ;
+  justify-content: center;
+
+  align-items: center;
+max-width: 1280px !important;
+margin: 0% auto;
+/* padding: 0 2% ; */
 
 }
 
 .footer{
+    display: flex;
+    flex-direction: column;
     max-width: 1280px;
-       min-height:500px;
+    margin: 0 auto;
+       /* min-height:500px; */
+
 }
 .blockBlack {
     /* margin-top: 6%; */
@@ -108,20 +115,27 @@ display: flex;
    font-weight: 600;
    font-size: 12px;
    line-height: 18px;
-   
+   justify-content: center;
 color: #FFFFFF;
     max-width: 1280px;
-    padding: 2% 5% 0%;
-    margin: 0% 3%;
+    padding: 1% 15% 0% 15%;
+    margin: 3% auto;
 }
 
+.beInTouch {
+    display: flex;
+    color: #FFFFFF;
+    max-width: 350px;
+    white-space: nowrap;
+
+}
 .div1 {
     display: flex;
 
     color: #FFFFFF;
     align-items: baseline;
  white-space: nowrap;
- margin: 0 3%;
+ margin: 0 auto;
 }
 
 input {
@@ -164,7 +178,7 @@ input {
     padding-left: 10%;
 }
 .div2{
-margin-left: 7%;
+margin-left: auto;
 margin-top: 2%;
 }
 .upper{
@@ -183,10 +197,12 @@ margin-top: 2%;
 }
 .div3 {
     /* margin-left: 30%; */
-    margin-top: 5%;
-    width: 25%;
-    margin-left: 7%;
+    /* margin-top: 5%; */
+   max-width: 25%;
+margin: 5% auto;
     line-height: 3;
+    white-space: nowrap;
+
 
  
     
