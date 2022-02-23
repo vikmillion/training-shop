@@ -1,6 +1,6 @@
-import React, { useCallback, useRef, useState } from "react";
+import React, {  useRef, useState } from "react";
 
-import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
 import "swiper/css/navigation";
 import "swiper/css";
@@ -9,14 +9,9 @@ import "swiper/css/free-mode";
 
 import classes from "./Product.module.css";
 import "./ProductMain.css";
-// import up from "./images/up.svg";
-// import down from "./images/down.svg";
 import star from "./images/star.svg";
 import starGrey from "./images/starGrey.svg";
 import imgS1 from "./images/imgS1.png";
-import imgS2 from "./images/imgS2.png";
-import imgS3 from "./images/imgS3.png";
-import imgS4 from "./images/imgS4.png";
 import imgXS1 from "./images/imgXS1.png";
 import imgXS2 from "./images/imgXS2.png";
 import imgXS3 from "./images/imgXS3.png";
@@ -41,9 +36,7 @@ import imgM2 from "./images/imgM2.png";
 import imgM3 from "./images/imgM3.png";
 import imgM4 from "./images/imgM4.png";
 import { FreeMode, Thumbs } from "swiper";
-import { BsChevronDown, BsChevronUp } from "react-icons/bs";
-import { Controller } from "swiper";
-import SwiperCore, { Autoplay } from "swiper";
+import SwiperCore from "swiper";
 
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
@@ -51,25 +44,6 @@ SwiperCore.use([Navigation]);
 
 function ProductMain(props) {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
-
-  // const [firstSwiper, setFirstSwiper] = useState(null);
-  // const [secondSwiper, setSecondSwiper] = useState(null);
-
-  // const swiper = useSwiper();
-  // const swiperRef = React.useRef(null);
-  // const prevRef = useRef(null);
-  // const nextRef = useRef(null);
-
-  const swiperRef = useRef(null);
-  // SwiperCore.use([Autoplay]); // don't need navigation anymore
-
-  // const prevSlide = useCallback(() => {
-  //   swiperRef.current?.swiper.slidePrev();
-  // }, [swiperRef]);
-
-  // const nextSlide = useCallback(() => {
-  //   swiperRef.current?.swiper.slideNext();
-  // }, [swiperRef]);
 
   return (
     <>
