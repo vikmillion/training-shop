@@ -26,6 +26,7 @@ function Main1(props) {
           navigation={true}
           modules={[Navigation]}
           className="mySwiperMain"
+          data-test-id='main-slider'
         >
           <SwiperSlide>
             <img src={group} alt="" />

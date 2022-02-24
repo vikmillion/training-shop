@@ -58,6 +58,7 @@ const BurgerClass = () => {
 
   const onClickMenu = () => {
     setIsMobile(!isMobile);
+  
   };
   return (
     <>
@@ -69,9 +70,9 @@ const BurgerClass = () => {
         </div>
 
         <div
-          data-test-id="burger-menu"
+          data-test-id='burger-menu'
           className={classNames("nav-links", { "nav-links-mobile": isMobile })}
-          onClick={() => setIsMobile(false)}
+          onClick={() => setIsMobile(false) }
         >
           {linkes.map((i) => (
             <>

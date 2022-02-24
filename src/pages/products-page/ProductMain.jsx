@@ -38,7 +38,12 @@ import imgM4 from "./images/imgM4.png";
 import { FreeMode, Thumbs } from "swiper";
 import SwiperCore from "swiper";
 
-import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import {
+  IoIosArrowBack,
+  IoIosArrowForward,
+  IoIosArrowUp,
+  IoIosArrowDown,
+} from "react-icons/io";
 
 SwiperCore.use([Navigation]);
 
@@ -70,29 +75,29 @@ function ProductMain(props) {
               </div>
             </div>
           </div>
-          <div className={classes.container2}>
+          <div className={classes.container2} data-test-id='product-slider'>
             <div className="vertical">
               <div className="button-nav-vertical">
-                <div
-                  type="button"
-                  className="swiper-button-prev vertical-buttom-up"
-                ></div>
-                <div
-                  type="button"
-                  className="swiper-button-next vertical-buttom-down"
-                ></div>
+                <div type="button" className=" vertical-buttom-up">
+                  {" "}
+                  <IoIosArrowUp />{" "}
+                </div>
+                <div type="button" className=" vertical-buttom-down">
+                  {" "}
+                  <IoIosArrowDown />{" "}
+                </div>
               </div>
               <div className="verCarousel">
                 <Swiper
                   // onSwiper={setThumbsSwiper}
                   direction={"vertical"}
                   onSwiper={setThumbsSwiper}
-                  slidesPerView={"auto"}
+                  slidesPerView={4}
                   centerInsufficientSlides={true}
                   spaceBetween={10}
-                  // pagination={{
-                  //   clickable: true,
-                  // }}
+                  pagination={{
+                    clickable: true,
+                  }}
                   modules={[FreeMode, Navigation, Thumbs]}
                   navigation={{
                     prevEl: ".vertical-buttom-up",
@@ -102,16 +107,6 @@ function ProductMain(props) {
                   watchSlidesProgress={true}
                   className="mySwiperS"
                 >
-                  {/* {" "}
-                <div className="button-nav">
-                  <div className="prev">
-                    {" "}
-                    <BsChevronUp />
-                  </div>
-                  <div className="next">
-                    <BsChevronDown />
-                  </div>
-                </div> */}
                   <SwiperSlide>
                     <img src={imgS1} alt="" />
                   </SwiperSlide>
@@ -130,7 +125,7 @@ function ProductMain(props) {
             <div className="horizCarousel">
               <div className="swiper-button-prev vertical-buttom-up horizont-button-prev" />
               <Swiper
-                slidesPerView={"auto"}
+                slidesPerView={1}
                 centerInsufficientSlides={true}
                 centeredSlides={true}
                 spaceBetween={100}
@@ -253,23 +248,24 @@ function ProductMain(props) {
           </div>
           <div className={classes.lastBlock}>
             <div className={classes.related}>RELATED PRODUCTS</div>
-            <div className={classes.last}></div>
-          </div>{" "}
-          <div className={classes.imgTextBlock}>
-            <div className="button-nav">
-              <div className="prevLast">
-                <IoIosArrowBack />
-              </div>
-              <div className="nextLast">
-                {" "}
-                <IoIosArrowForward />
+            <div className={classes.last}>
+              <div className="button-nav">
+                <div className="prevLast">
+                  <IoIosArrowBack />
+                </div>
+                <div className="nextLast">
+                  {" "}
+                  <IoIosArrowForward />
+                </div>
               </div>
             </div>
+          </div>{" "}
+          <div className={classes.imgTextBlock} data-test-id='related-slider'>
             <Swiper
-              slidesPerView={4}
+              slidesPerView={1}
               spaceBetween={30}
-              slidesPerGroup={4}
-              loop={true}
+              // slidesPerGroup={4}
+              loop={false}
               loopFillGroupWithBlank={true}
               pagination={{
                 clickable: true,
@@ -280,17 +276,25 @@ function ProductMain(props) {
                 nextEl: ".nextLast",
                 prevEl: ".prevLast",
               }}
+              breakpoints={{
+                600: {
+                  slidesPerGroup:2,
+                  // slidesPerView: 2,
+                  spaceBetween: 10,
+                },
+                1000: {
+                  slidesPerGroup:3,
+                  // slidesPerView: 3,
+                  spaceBetween: 20,
+                },
+                1280: {
+                  slidesPerGroup: 4,
+                  // slidesPerView: 4,
+                  spaceBetween: 30,
+                },
+              }}
               className="mySwiperLast"
             >
-              {/* <div className="button-nav">
-                <div className="prevLast">
-                  <IoIosArrowBack />
-                </div>
-                <div className="nextLast">
-                  {" "}
-                  <IoIosArrowForward />
-                </div>
-              </div> */}
               <SwiperSlide>
                 {" "}
                 <div className={classes.imgText1}>
