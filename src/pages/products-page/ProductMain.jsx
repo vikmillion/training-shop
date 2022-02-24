@@ -260,11 +260,11 @@ function ProductMain(props) {
               </div>
             </div>
           </div>{" "}
-          <div className={classes.imgTextBlock} data-test-id='related-slider'>
+          <div className={classes.imgTextBlock} >
             <Swiper
               slidesPerView={1}
               spaceBetween={30}
-              // slidesPerGroup={4}
+              slidesPerGroup={4}
               loop={false}
               loopFillGroupWithBlank={true}
               pagination={{
@@ -279,21 +279,22 @@ function ProductMain(props) {
               breakpoints={{
                 600: {
                   slidesPerGroup:2,
-                  // slidesPerView: 2,
+                  slidesPerView: 2,
                   spaceBetween: 10,
                 },
                 1000: {
-                  slidesPerGroup:3,
-                  // slidesPerView: 3,
+                  slidesPerGroup:4,
+                  slidesPerView: 3,
                   spaceBetween: 20,
                 },
                 1280: {
                   slidesPerGroup: 4,
-                  // slidesPerView: 4,
+                  slidesPerView: 4,
                   spaceBetween: 30,
                 },
               }}
               className="mySwiperLast"
+              data-test-id='related-slider'
             >
               <SwiperSlide>
                 {" "}
