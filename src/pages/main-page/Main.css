@@ -1,7 +1,7 @@
-*{
+* {
     padding: 0;
     margin: 0;
-/* box-sizing: border-box; */
+    /* box-sizing: border-box; */
 }
 
 .swiper {
@@ -28,7 +28,7 @@
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
-    
+
 }
 
 .swiper-button-prev::after,
@@ -39,42 +39,43 @@
 }
 
 .container {
- text-align: center;
+    text-align: center;
     display: flex;
-    justify-content: center ;
-    align-items: center ;
+    justify-content: center;
+    align-items: center;
     box-sizing: border-box;
     justify-content: space-between;
     align-items: stretch;
     max-width: 1110px;
-   
+
     margin: 2% auto;
     /* padding: 0 2% 0 2%; */
- 
-    
-       -webkit-box-pack: center;
-       -ms-flex-pack: center;
-       -webkit-justify-content: center;
-       justify-content: center;
-       -webkit-box-align: center;
-       -ms-flex-align: center;
-       -webkit-align-items: center;
-       align-items: center;
-gap: 2em;
 
 
-  
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    gap: 2em;
+
+
+
 }
 
 
 
- .swiper-slide {
+.swiper-slide {
     /* max-width: 540px; */
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
+
 .mySwiperMain .swiper-slide img {
     max-width: 560px;
     display: flex;
@@ -88,37 +89,37 @@ gap: 2em;
     flex-direction: column;
     box-sizing: border-box;
     justify-content: space-between;
-gap: 2em;
-   transform: translateZ(0);
-   backface-visibility: hidden;
+    gap: 2em;
+    transform: translateZ(0);
+    backface-visibility: hidden;
 }
 
 .box2 {
     display: flex;
     /* box-sizing: border-box;
     justify-content: space-between; */
-/* max-width: 540px;
+    /* max-width: 540px;
 max-height: 490px; */
 
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
 
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-  gap:2em;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    gap: 2em;
 }
 
 .div2 {
     display: flex;
     /* background-image: url("./images/blockMain2.png"); */
-   /* max-height: 200px;
+    /* max-height: 200px;
     width: 255px; */
     /* box-sizing: border-box; */
 }
@@ -140,7 +141,8 @@ max-height: 490px; */
     /* box-sizing: border-box; */
 }
 
-.swiper-button-next, .swiper-button-prev{
+.swiper-button-next,
+.swiper-button-prev {
     height: 40px;
     width: 40px;
     background-color: #fff;
@@ -151,42 +153,47 @@ max-height: 490px; */
 /* ----------------------- media-------------------- */
 
 
-@media (max-width: 996px){
+@media (max-width: 996px) {
 
-.container{
-    display: flex;
-       flex-direction: column;
-       align-items: center;
-       max-width: 600px;
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 600px;
+    }
+
 }
 
-}
 @media (max-width: 600px) {
 
-    .box2{
+    .box2 {
         display: flex;
         flex-direction: column;
 
     }
-       .div4 img {
-           object-fit: cover;
-           height: 200px;
-           max-width: 390px;
-        
-       }
+
+    .div4 img {
+        object-fit: cover;
+        height: 200px;
+        max-width: 390px;
+
+    }
 }
+
 @media (max-width: 400px) {
-    .div4 img{
+    .div4 img {
         object-fit: cover;
         height: 162px;
         max-width: 390px;
         margin: 0 7%;
     }
-    .div2 img, .div3 img{ 
-       object-fit: cover;
-    height: 100px;
-    width: 390px;
-margin: 0 7%;
+
+    .div2 img,
+    .div3 img {
+        object-fit: cover;
+        height: 100px;
+        width: 390px;
+        margin: 0 7%;
     }
-    
+
 }

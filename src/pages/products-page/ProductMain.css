@@ -14,13 +14,13 @@
     display: flex;
     flex-direction: row;
 } */
-.horizCarousel{
+/* .horizCarousel{
     display: flex !important;
     justify-content: center !important;
     align-items: center !important;
     margin: 0 auto !important;
     padding: 0 10% 0 10% !important;
-}
+} */
 
 
 }

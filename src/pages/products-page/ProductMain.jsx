@@ -36,7 +36,6 @@ import imgM2 from "./images/imgM2.png";
 import imgM3 from "./images/imgM3.png";
 import imgM4 from "./images/imgM4.png";
 import { FreeMode, Thumbs } from "swiper";
-import SwiperCore from "swiper";
 
 import {
   IoIosArrowBack,
@@ -45,7 +44,6 @@ import {
   IoIosArrowDown,
 } from "react-icons/io";
 
-SwiperCore.use([Navigation]);
 
 function ProductMain(props) {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
@@ -93,18 +91,18 @@ function ProductMain(props) {
                   direction={"vertical"}
                   onSwiper={setThumbsSwiper}
                   slidesPerView={4}
-                  centerInsufficientSlides={true}
-                  spaceBetween={10}
-                  pagination={{
-                    clickable: true,
-                  }}
+                  // centerInsufficientSlides={true}
+                  spaceBetween={0}
+                  // pagination={{
+                  //   clickable: true,
+                  // }}
                   modules={[FreeMode, Navigation, Thumbs]}
                   navigation={{
                     prevEl: ".vertical-buttom-up",
                     nextEl: ".vertical-buttom-down",
                   }}
-                  freeMode={true}
-                  watchSlidesProgress={true}
+                  // freeMode={true}
+                  // watchSlidesProgress={true}
                   className="mySwiperS"
                 >
                   <SwiperSlide>
@@ -125,10 +123,10 @@ function ProductMain(props) {
             <div className="horizCarousel">
               <div className="swiper-button-prev vertical-buttom-up horizont-button-prev" />
               <Swiper
-                slidesPerView={1}
-                centerInsufficientSlides={true}
-                centeredSlides={true}
-                spaceBetween={100}
+                // slidesPerView={1}
+                // centerInsufficientSlides={true}
+                // centeredSlides={true}
+                // spaceBetween={100}
                 navigation={{
                   prevEl: ".vertical-buttom-up",
                   nextEl: ".vertical-buttom-down",
@@ -263,10 +261,10 @@ function ProductMain(props) {
           <div className={classes.imgTextBlock} >
             <Swiper
               slidesPerView={1}
-              spaceBetween={30}
+              // spaceBetween={30}
               slidesPerGroup={4}
               loop={false}
-              loopFillGroupWithBlank={true}
+              // loopFillGroupWithBlank={true}
               pagination={{
                 clickable: true,
               }}
@@ -282,8 +280,8 @@ function ProductMain(props) {
                   slidesPerView: 2,
                   spaceBetween: 10,
                 },
-                1000: {
-                  slidesPerGroup:4,
+                1050: {
+                  slidesPerGroup:3,
                   slidesPerView: 3,
                   spaceBetween: 20,
                 },
