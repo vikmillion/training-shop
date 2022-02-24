@@ -41,7 +41,7 @@
     .linkGroup{
         flex-direction: column;
         min-width: fit-content;
-        align-items: center;
+       align-items: flex-start
     }
     .div1{
   margin: 0% 0% 0% 15%;
@@ -85,8 +85,9 @@ max-width: fit-content;
     .linkGroup {
         flex-direction: column;
         min-width: fit-content;
-        align-items: center;
+    
         white-space: nowrap;
+        align-items: flex-start;
     }
        .btn {
            max-width: fit-content;
