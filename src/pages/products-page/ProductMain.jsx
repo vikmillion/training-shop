@@ -73,7 +73,7 @@ function ProductMain(props) {
               </div>
             </div>
           </div>
-          <div className={classes.container2} data-test-id='product-slider'>
+          <div className={classes.container2} data-test-id="product-slider">
             <div className="vertical">
               <div className="button-nav-vertical">
                 <div type="button" className=" vertical-buttom-up">
@@ -258,7 +258,7 @@ function ProductMain(props) {
               </div>
             </div>
           </div>{" "}
-          <div className={classes.imgTextBlock} >
+          <div className={classes.imgTextBlock}>
             <Swiper
               slidesPerView={1}
               // spaceBetween={30}
@@ -275,13 +275,18 @@ function ProductMain(props) {
                 prevEl: ".prevLast",
               }}
               breakpoints={{
+                360: {
+                  slidesPerGroup: 1,
+                  slidesPerView: 1,
+                  spaceBetween: 2,
+                },
                 600: {
-                  slidesPerGroup:2,
+                  slidesPerGroup: 2,
                   slidesPerView: 2,
                   spaceBetween: 10,
                 },
                 1050: {
-                  slidesPerGroup:3,
+                  slidesPerGroup: 3,
                   slidesPerView: 3,
                   spaceBetween: 20,
                 },
@@ -292,7 +297,7 @@ function ProductMain(props) {
                 },
               }}
               className="mySwiperLast"
-              data-test-id='related-slider'
+              data-test-id="related-slider"
             >
               <SwiperSlide>
                 {" "}
