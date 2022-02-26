@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/training-shop/static/css/main.e2e8920a.css",
-    "main.js": "/training-shop/static/js/main.13be6ecf.js",
+    "main.css": "/training-shop/static/css/main.10c202b5.css",
+    "main.js": "/training-shop/static/js/main.e4fe4eed.js",
     "static/js/787.47ca6e30.chunk.js": "/training-shop/static/js/787.47ca6e30.chunk.js",
     "static/media/imgMain1.png": "/training-shop/static/media/imgMain1.c59a67a48a101ef83f4a.png",
     "static/media/imgMain6.png": "/training-shop/static/media/imgMain6.4152b783e591f01bafb6.png",
@@ -18,25 +18,19 @@
     "static/media/imgM1.png": "/training-shop/static/media/imgM1.3a856e514e24a961c862.png",
     "static/media/imgM4.png": "/training-shop/static/media/imgM4.9b64afd1102773f865de.png",
     "static/media/imgM2.png": "/training-shop/static/media/imgM2.340ac30c6389ce28a614.png",
-    "static/media/img_5.jpg": "/training-shop/static/media/img_5.304a6854b9e470a023b3.jpg",
-    "static/media/img_2.jpg": "/training-shop/static/media/img_2.472f7f51d3eb884d5a3f.jpg",
+    "static/media/img_2.jpg": "/training-shop/static/media/img_2.6b1e286dc702ba60be57.jpg",
     "static/media/imgMain2.png": "/training-shop/static/media/imgMain2.cbee119685e91c164d5b.png",
-    "static/media/img_1.jpg": "/training-shop/static/media/img_1.440528fcb0af0208533a.jpg",
+    "static/media/img_1.jpg": "/training-shop/static/media/img_1.50c6caf0e00920727596.jpg",
     "static/media/blockMain2.png": "/training-shop/static/media/blockMain2.33900894d1b806494455.png",
-    "static/media/img_4.jpg": "/training-shop/static/media/img_4.46d31ed37fb679717554.jpg",
-    "static/media/img_3.jpg": "/training-shop/static/media/img_3.5b0ad8d7935ef1133892.jpg",
-    "static/media/img_8.jpg": "/training-shop/static/media/img_8.47ad6cd3ba7fe24ef0b8.jpg",
-    "static/media/img_6.jpg": "/training-shop/static/media/img_6.28f8cc871006491fbe6f.jpg",
-    "static/media/img_7.jpg": "/training-shop/static/media/img_7.1a05b311f7288c6c0662.jpg",
     "static/media/imgMain3.png": "/training-shop/static/media/imgMain3.8155c56f7dd3f70c2963.png",
     "static/media/blockMain3.png": "/training-shop/static/media/blockMain3.6b663162704df6e3b594.png",
     "static/media/imgS1.png": "/training-shop/static/media/imgS1.71514e3c9c4503ac3ae7.png",
     "static/media/bus.svg": "/training-shop/static/media/bus.9cd5cd770ef6beb83893c8bf66e4e1ea.svg",
     "static/media/planet.svg": "/training-shop/static/media/planet.e7fbffcf8e0dec190ac395e582336b07.svg",
+    "index.html": "/training-shop/index.html",
     "static/media/support.svg": "/training-shop/static/media/support.b6d71e1a52049e31c079576a7a1a35a5.svg",
     "static/media/place.svg": "/training-shop/static/media/place.f361d0b96122f8aeff226ef55eeadc4e.svg",
     "static/media/rack.svg": "/training-shop/static/media/rack.fccbda8b547981526d9b1a5d18959812.svg",
-    "index.html": "/training-shop/index.html",
     "static/media/star.svg": "/training-shop/static/media/star.6c915ea85467fb63b37d53f81f328d30.svg",
     "static/media/starGrey.svg": "/training-shop/static/media/starGrey.80b033beb888742706fa70565d42526e.svg",
     "static/media/stargold.svg": "/training-shop/static/media/stargold.ff338950b6d3257ca70cb4707e31c9e4.svg",
@@ -50,12 +44,12 @@
     "static/media/libra.svg": "/training-shop/static/media/libra.3b621aec2a61da5155deff199417102f.svg",
     "static/media/shopcart.svg": "/training-shop/static/media/shopcart.f83a75a7371832b4fcec9fd8fd5f6474.svg",
     "static/media/v.svg": "/training-shop/static/media/v.9f4dd338b481a943c89e0ee673f34fe5.svg",
-    "main.e2e8920a.css.map": "/training-shop/static/css/main.e2e8920a.css.map",
-    "main.13be6ecf.js.map": "/training-shop/static/js/main.13be6ecf.js.map",
+    "main.10c202b5.css.map": "/training-shop/static/css/main.10c202b5.css.map",
+    "main.e4fe4eed.js.map": "/training-shop/static/js/main.e4fe4eed.js.map",
     "787.47ca6e30.chunk.js.map": "/training-shop/static/js/787.47ca6e30.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e2e8920a.css",
-    "static/js/main.13be6ecf.js"
+    "static/css/main.10c202b5.css",
+    "static/js/main.e4fe4eed.js"
   ]
 }
