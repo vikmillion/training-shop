@@ -17,7 +17,7 @@ function Main1(props) {
 
   return (
     <>
-      <div className="container">
+      <div className="containerMain1">
         <Swiper
           slidesPerView={"auto"}
           centerInsufficientSlides={true}

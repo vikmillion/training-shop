@@ -14,7 +14,7 @@
     font-size: 11px;
     line-height: 12px;
        margin: 0 auto;
-       padding: 0% 2%;
+       padding: 0% 0%;
     max-width: 1280px;
 /* width: 100%; */
 }
@@ -52,6 +52,7 @@
 .div1 {
    display: flex;
    flex: 20%;
+   padding: 0 2%;
 }
 
 .div2 {
@@ -74,8 +75,9 @@
 display: flex;
 flex: 20%;
 justify-content: flex-end;
+
 /* flex-basis: 20%; */
-/* padding: 0 0 0 5%; */
+padding: 0 2%;
 }
 
 

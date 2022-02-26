@@ -106,7 +106,7 @@ function Footer(props) {
         </div>
 
         <div className={classes.linkGroup}>
-          <div className={classes.div3}>
+          <div className={classes.div3_1}>
             <div className={classes.upper}>CATEGORIES</div>
             <div>
               {linkes1.map((i) => (
@@ -124,7 +124,7 @@ function Footer(props) {
             </div>
           </div>
 
-          <div className={classes.div3}>
+          <div className={classes.div3_2}>
             <div className={classes.upper}>Information</div>
             {linkes2.map((i) => (
               <>
@@ -139,7 +139,7 @@ function Footer(props) {
               </>
             ))}
           </div>
-          <div className={classes.div3}>
+          <div className={classes.div3_3}>
             <div className={classes.upper}>USEFUL LINK </div>
             {linkes3.map((i) => (
               <>
@@ -154,7 +154,7 @@ function Footer(props) {
               </>
             ))}
           </div>
-          <div className={classes.div3}>
+          <div className={classes.div3_4}>
             <div className={classes.upper}>CONTACT US</div>
             <div className={classes.linkUnder_4}>
               <div><img src={place} alt="" /> Belarus, Gomel, Lange 17 <br /></div>

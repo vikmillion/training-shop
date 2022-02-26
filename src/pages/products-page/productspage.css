@@ -1,0 +1,72 @@
+.container{
+    display: flex;
+    max-width: 1280px;
+    margin: 0 auto;
+    flex-direction: column;
+
+}
+
+.right{
+    /* font-size: small; */
+ /* width: 20px;
+ height: 10px; */
+ 
+
+}
+.top{
+    display: flex;
+    max-width: 1280px !important;
+    padding: 0 2%;
+    margin: auto;
+
+}
+.link{
+    font-family: Spartan;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 18px;
+text-transform: capitalize;
+    color: #121212;
+}
+.headline{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #121212;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.products-page_container {
+    display: flex;
+    max-width: 1280px;
+    
+        flex-wrap: wrap;
+        gap: 1em;
+        justify-content: space-evenly;
+
+}
+
+
+.See {
+    display: flex;
+    text-align: center;
+    margin: 2%;
+    font-family: Spartan;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 15px;
+    letter-spacing: 0.06em;
+    /* margin-right: 15%; */
+    justify-content: center;
+
+}
