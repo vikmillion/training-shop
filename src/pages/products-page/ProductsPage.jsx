@@ -17,6 +17,7 @@ const ProductsPage = ({ productType }) => {
         <Link to={`/${productType}`} className="link">
           {productType}
         </Link>
+        
       </div>
       <div data-test-id={`products-page-${productType}`} className="container">
         <div className="head">

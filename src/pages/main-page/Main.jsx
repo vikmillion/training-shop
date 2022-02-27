@@ -1,4 +1,3 @@
-import {} from "@mui/material";
 import React from "react";
 import Clothes from "./clothes";
 import Main1 from "./Main1";
@@ -16,6 +15,7 @@ function Main(params) {
   return (
     <>
       <main>
+       
       <Main1></Main1>
         <Main2></Main2>
         {/* <Main3></Main3> */}

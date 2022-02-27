@@ -4,7 +4,7 @@ import planet from "../header/images/planet.svg";
 import user from "../header/images/user.svg";
 import shopcart from "../header/images/shopcart.svg";
 import classes from "./nav.module.css";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const linkes = [
   {
@@ -61,15 +61,16 @@ function Nav(props) {
         <div className={classes.box}>
         {linkes.map((i) => (
           <>
-            <Link
+            <NavLink
               key={i.id}
               to={`/${i.path}`}
-              className={classes.div3}
+              
+              className={classes.div3  }
               data-test-id={`menu-link-${i.path}`}
             >
               {" "}
               {i.title}{" "}
-            </Link>
+            </NavLink>
           </>
         ))}</div>
         <div className={classes.div4}>
