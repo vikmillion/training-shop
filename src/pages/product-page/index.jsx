@@ -46,8 +46,8 @@ import React, { useState } from "react";
 // } from "react-icons/io";
 import { useParams } from "react-router-dom";
 
-const ProductPage = ({ }) => {
-    const [thumbsSwiper, setThumbsSwiper] = useState(null);
+const ProductPage = () => {
+    // const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
     const { id } = useParams();
     // const [card, setCard] = useState(null);
